@@ -1,0 +1,163 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.blank {
+    background-color: white;
+}
+.row-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0px;
+}
+
+.card {
+    background-color: rgb(237, 251, 255);
+    transition: ease-in-out 0.1ms;    
+}
+.header {
+    background-color: rgb(38, 62, 70);
+    color: white;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-1 {
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.p-2 {
+    margin-bottom: 10px;
+}
+.p-3 {
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 5px 10px 10px;
+}
+span {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.level-7 {
+    border-bottom-left-radius: 5px;
+}
+.level-1 {
+    border-bottom-right-radius: 5px;
+}
+
+/* ----- Cards on hover ------- */
+.level-7:hover {
+    background-color: rgb(77, 202, 77);
+    cursor: pointer;
+}
+
+.level-6:hover {
+    background-color: rgb(143, 228, 143);
+    cursor: pointer;
+}
+.level-5:hover {
+    background-color: rgb(231, 184, 114);
+    cursor: pointer;
+}
+.level-4:hover {
+    background-color: rgb(231, 174, 89);
+    cursor: pointer;
+}
+.level-3:hover {
+    background-color: rgb(226, 159, 57);
+    cursor: pointer;
+}
+.level-2:hover {
+    background-color: rgb(240, 164, 164);
+    cursor: pointer;
+}
+.level-1:hover {
+    background-color: rgb(236, 117, 117);
+    cursor: pointer;
+}
+
+
+/* Header cards */
+.span-two {
+    grid-column: 1 / span 2;
+    background-color: rgb(48, 109, 48);
+    color: white;
+    border-top-left-radius: 5px;
+}
+.span-three {
+    grid-column: 3 / span 3;
+    background-color: rgb(187, 112, 0);
+    color: white;
+}
+.span-independent {
+    grid-column: 6 / span 2;
+    background-color: rgb(158, 39, 39);
+    color: white;
+    border-top-right-radius: 5px;
+}
+
+/* ----- Left cards ------- */
+.first-card {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(35, 93, 112);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.p-2 {
+    left: 10px;
+    color: white;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+
+/* ----- Header ------ */
+
+
+.btn-success {
+    background-color: rgb(35, 93, 112);
+    color: white;
+}
+.btn-success-cognitive {
+    background-color: rgb(90, 26, 38);
+    color: white;
+}
+.cognitive {
+    background-color: rgb(90, 26, 38);
+}
