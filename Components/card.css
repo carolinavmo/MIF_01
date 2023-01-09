@@ -146,7 +146,9 @@ span {
 
 }
 
-
+.score18, .score17, .score16, .score15, .score14 {
+    background-color: rgb(255, 242, 244);
+}
 /* ----- Header ------ */
 
 
@@ -161,3 +163,4 @@ span {
 .cognitive {
     background-color: rgb(90, 26, 38);
 }
+
