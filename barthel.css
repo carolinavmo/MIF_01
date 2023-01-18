@@ -27,7 +27,7 @@ h1 {
 
 
 .nav {
-    background-color: rgb(35, 112, 99);
+    background-color: rgb(17, 53, 65);
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ h1 {
 .footer {
     margin-top: 100px;
     width: 100%;
-    background-color: rgb(35, 93, 112);
+    background-color: rgb(17, 53, 65);
     height: 100px;
     display: flex;
     justify-content: center;
@@ -192,9 +192,8 @@ span {
     text-align: left;
     align-items: center;
     font-weight: bold;
-    background-color: rgb(35, 112, 99);
-    /*background-color: rgb(35, 93, 112);*/
-
+    /*background-color: rgb(35, 112, 99);*/
+    background-color: rgb(35, 93, 112);
     color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -222,6 +221,6 @@ span {
 
 
 .btn-success {
-    background-color: rgba(35, 112, 99, 0.877);
+    background-color: rgba(35, 100, 112, 0.911);
     color: white;
 }
