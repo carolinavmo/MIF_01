@@ -2,7 +2,7 @@
     margin: 50px 70px;
 }
 .result-box {
-    display: flex;
+    display: none;
     justify-content: space-between;
     background-color: rgb(182, 225, 252);
     border-radius: 5px;
@@ -13,6 +13,9 @@
     text-align: center;
     font-size: 30px;
 
+}
+.show-result {
+    display: flex;
 }
 
 .result-box > .copy {

@@ -75,7 +75,7 @@ function addClassCognitive(e) {
   e.classList.add("btn-success-cognitive");
 }
 
-// Add all thes scores ---------------------------------------
+// Add all the scores ---------------------------------------
 function addScore(btn) {
   motor =
     score1 +
@@ -190,10 +190,12 @@ function showResults() {
     score17 > 0 &&
     score18 > 0
   ) {
+    let resultBox = document.querySelectorAll(".result-box").forEach((x)=> {x.classList.add("show-result")});
+    let paragraph = document.getElementById("p").style.display = "none";
     result.innerText = `MIF = ${total} / 126 pts (M: ${motor}  C: ${cognitive})  `;
     result2.innerText = `MIF: A-${score1} | B-${score2} | C-${score3} | D-${score4} | E-${score5} | F-${score6} | G-${score7} | H-${score8} | I-${score9} | J-${score10} | K-${score11} | L-${score12} | M-${score13} | N-${score14} | O-${score15} | P-${score16} | Q-${score17} | R-${score18}.   Total = ${total} / 126 pts`;
-    result3.innerText = `MIF = ${i_to_string(i_compl, i_compl_string)}   ${i_to_string(i_mod, i_mod_string)}  ${i_to_string(i_sup, i_sup_string)}   ${i_to_string(i_amin, i_amin_string)}   ${i_to_string(i_amod, i_amod_string)} ${i_to_string(i_amax, i_amax_string)} ${i_to_string(i_at, i_at_string)}. TOTAL = ${total} / 126 pts (M: ${motor}  C: ${cognitive})`;
-    result4.innerText = `MIF: Alimentação - ${data_name1} (${score1}); Higiene pessoal - ${data_name2} (${score2}); Banho - ${data_name3} (${score3}); Vestir metade superior - ${data_name4} (${score4}); Vestir metade inferior - ${data_name5} (${score5}); Sanita - ${data_name6} (${score6}); Bexiga - ${data_name7} (${score7}); Intestino - ${data_name8} (${score8}); Transferências (leito, cadeira, CR) - ${data_name9} (${score9}); Transferências (sanita) - ${data_name10} (${score10}); Transferências (banheira ou chuveiro) - ${data_name11} (${score11}); Locomoção - ${data_name12} (${score12}); Escadas - ${data_name13} (${score13}); Compreensão - ${data_name14} (${score14}); Expressão - ${data_name15} (${score15}); Interação social - ${data_name16} (${score16}); Resolução de problemas - ${data_name17} (${score17}); Memória - ${data_name18} (${score18}).   Total = ${total} / 126 pts (M: ${motor}  C: ${cognitive})`;
+    result3.innerText = `MIF: ${i_to_string(i_compl, i_compl_string)} ${i_to_string(i_mod, i_mod_string)} ${i_to_string(i_sup, i_sup_string)}   ${i_to_string(i_amin, i_amin_string)}   ${i_to_string(i_amod, i_amod_string)} ${i_to_string(i_amax, i_amax_string)} ${i_to_string(i_at, i_at_string)}. TOTAL = ${total} / 126 pts (M: ${motor}  C: ${cognitive})`;
+    result4.innerText = `MIF: Alimentação - ${data_name1} (${score1}); Higiene pessoal - ${data_name2} (${score2}); Banho - ${data_name3} (${score3}); Vestir metade superior - ${data_name4} (${score4}); Vestir metade inferior - ${data_name5} (${score5}); Sanita - ${data_name6} (${score6}); Bexiga - ${data_name7} (${score7}); Intestino - ${data_name8} (${score8}); Transferências (leito, cadeira, CR) - ${data_name9} (${score9}); Transferências (sanita) - ${data_name10} (${score10}); Transferências (banheira ou chuveiro) - ${data_name11} (${score11}); Locomoção - ${data_name12} (${score12}); Escadas - ${data_name13} (${score13}); Compreensão - ${data_name14} (${score14}); Expressão - ${data_name15} (${score15}); Interação social - ${data_name16} (${score16}); Resolução de problemas - ${data_name17} (${score17}); Memória - ${data_name18} (${score18}). Total = ${total} / 126 pts (M: ${motor}  C: ${cognitive})`;
   }
 
 

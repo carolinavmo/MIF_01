@@ -1,12 +1,99 @@
-.row {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Fonts --- */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    min-width: 1094px;
+}
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+h1 {
+    color: white;
+}
+.container {
+    margin: 70px 150px;
+}
+
+
+/* --------------------- NAVBAR BARTHEL ------------------------------------*/
+
+
+.nav {
+    background-color: rgb(35, 112, 99);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: rgb(35, 93, 112);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+
+
+/* ------------------------------ CARDS CSS ---------------------------------*/
+.row-3 {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     min-height: 50px;
     column-gap: 0px;
     margin-bottom: 18px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+
+.row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 .blank {
     background-color: white;
 }
@@ -68,20 +155,17 @@ span {
 }
 
 /* ----- Cards on hover ------- */
-.level-7:hover {
-    background-color: rgb(77, 202, 77);
+
+.level-15:hover {
+    background-color: rgb(89, 177, 89);
     cursor: pointer;
 }
 
-.level-6:hover {
+.level-10:hover {
     background-color: rgb(143, 228, 143);
     cursor: pointer;
 }
 .level-5:hover {
-    background-color: rgb(231, 184, 114);
-    cursor: pointer;
-}
-.level-4:hover {
     background-color: rgb(231, 174, 89);
     cursor: pointer;
 }
@@ -93,30 +177,13 @@ span {
     background-color: rgb(240, 164, 164);
     cursor: pointer;
 }
-.level-1:hover {
+.level-0:hover {
     background-color: rgb(236, 117, 117);
     cursor: pointer;
 }
 
 
-/* Header cards */
-.span-two {
-    grid-column: 1 / span 2;
-    background-color: rgb(48, 109, 48);
-    color: white;
-    border-top-left-radius: 5px;
-}
-.span-three {
-    grid-column: 3 / span 3;
-    background-color: rgb(187, 112, 0);
-    color: white;
-}
-.span-independent {
-    grid-column: 6 / span 2;
-    background-color: rgb(158, 39, 39);
-    color: white;
-    border-top-right-radius: 5px;
-}
+
 
 /* ----- Left cards ------- */
 .first-card {
@@ -125,7 +192,9 @@ span {
     text-align: left;
     align-items: center;
     font-weight: bold;
-    background-color: rgb(35, 93, 112);
+    background-color: rgb(35, 112, 99);
+    /*background-color: rgb(35, 93, 112);*/
+
     color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -153,14 +222,6 @@ span {
 
 
 .btn-success {
-    background-color: rgba(35, 93, 112, 0.884);
+    background-color: rgba(35, 112, 99, 0.877);
     color: white;
 }
-.btn-success-cognitive {
-    background-color: rgba(90, 26, 38, 0.877);
-    color: white;
-}
-.cognitive {
-    background-color: rgb(90, 26, 38);
-}
-

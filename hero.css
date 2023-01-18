@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Fonts --- */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    min-width: 1094px;
+}
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+h1 {
+    color: white;
+}
+.container {
+    margin: 0 100px;
+    padding: 70px 250px 70px 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.nav {
+    background-color: rgb(35, 93, 112);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.scale-box {
+ width: 100%;
+ height: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 20px;
+ font-size: 28px;
+ font-weight: bold;
+ border-radius: 10px;
+ /*border: 1px solid  rgb(135, 195, 201);*/
+}
+.mif {
+    margin-top: 20px;
+    background-color: rgb(179, 228, 241);
+    text-decoration: none;
+    color: black;
+    /* background-color: rgb(237, 251, 255); */
+    /* border: 3px solid rgb(169, 219, 223); */
+}
+.mif:hover {
+    background-color: rgb(117, 206, 214);
+    cursor: pointer;
+
+}
+.barthel {
+    background-color: rgb(161, 238, 215);
+
+    /*background-color: rgb(237, 251, 255);*/
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+}
+.barthel:hover {
+    /*background-color: rgb(135, 195, 201);*/
+    background-color: rgb(76, 209, 169);
+    cursor: pointer;
+}
