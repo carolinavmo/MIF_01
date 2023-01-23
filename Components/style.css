@@ -17,6 +17,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     min-width: 1094px;
+    background-color: white;
 }
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
@@ -27,3 +28,4 @@ h1 {
 .container {
     margin: 70px 80px;
 }
+

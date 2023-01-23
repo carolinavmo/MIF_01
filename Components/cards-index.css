@@ -1,0 +1,88 @@
+.container-i {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 50px;
+    padding: 50px 250px;
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-i {
+    width: 230px;
+    height: 270px;
+    padding: 20px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    /* text-align: center; */
+}
+.b-blue {
+    border-top: 3px solid rgb(39, 202, 194);
+}
+.b-red {
+    border-top: 3px solid rgb(199, 0, 0)
+}
+.b-green {
+    border-top: 3px solid rgb(130, 202, 22);
+}
+.b-yellow {
+    border-top: 3px solid orange;
+}
+.b-pink {
+    border-top: 3px solid rgb(199, 31, 101);
+}
+
+
+
+
+
+.card-i:hover {
+    transform: scale(1.1);
+}
+
+#card-title {
+    font-weight: bold;
+    min-height: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+#card-items {
+    height: 10px;
+    margin-top: 10px;
+    color: rgb(128, 128, 128);
+    font-size: 10px;
+}
+#card-description {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+}
+
+#card-link {
+    text-decoration: none;
+    background-color: lightseagreen;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color ease-in-out 0.1s;
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+}
+#card-link:hover {
+    background-color: rgb(14, 116, 110);
+}
+

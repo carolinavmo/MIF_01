@@ -28,7 +28,7 @@ h1 {
 
 .nav {
     background-color: rgb(17, 53, 65);
-    border-bottom: 4px solid rgb(158, 21, 21);
+    border-bottom: 4px solid rgb(39, 202, 194);
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ h1 {
     margin-top: 100px;
     width: 100%;
     background-color: rgb(17, 53, 65);
-    border-top: 4px solid rgb(158, 21, 21);
+    border-top: 4px solid rgb(39, 202, 194);
     height: 100px;
     display: flex;
     justify-content: center;

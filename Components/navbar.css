@@ -1,23 +1,26 @@
 .nav {
     background-color: rgb(17, 53, 65);
+    /* background-color: rgb(99, 174, 197); */
+    border-bottom: 4px solid rgb(39, 202, 194);
+
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 
 .footer {
-    margin-top: 100px;
-    width: 100%;
     background-color: rgb(17, 53, 65);
+    border-top: 4px solid rgb(39, 202, 194);
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: 12px;
 }
