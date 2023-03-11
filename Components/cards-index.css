@@ -2,10 +2,10 @@
     width: 100vw;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 50px;
     column-gap: 50px;
-    padding: 50px 250px;
+    padding: 100px 100px;
     background-color: whitesmoke;
     font-family: 'Poppins', sans-serif;
 }
@@ -44,7 +44,7 @@
 
 
 .card-i:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 #card-title {
@@ -76,13 +76,18 @@
     color: white;
     padding: 3px 20px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
     transition: background-color ease-in-out 0.1s;
     position: absolute;
     bottom: 30px;
     left: 80px;
+
 }
 #card-link:hover {
     background-color: rgb(14, 116, 110);
 }
 
+#barthel-red {
+    background-color: darkred;
+}

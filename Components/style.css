@@ -17,7 +17,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     min-width: 1094px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
@@ -27,5 +27,21 @@ h1 {
 }
 .container {
     margin: 70px 80px;
+}
+
+.btn-home {
+    text-decoration: none;
+    background-color: lightseagreen;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color ease-in-out 0.1s;
+    bottom: 30px;
+    left: 80px;
+    font-weight: bold;
+}
+.btn-home:hover {
+    background-color: rgb(14, 116, 110);
 }
 

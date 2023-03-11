@@ -19,7 +19,7 @@ h1 {
     color: white;
 }
 .container {
-    margin: 70px 240px;
+    margin: 70px 220px;
 }
 
 #span {
@@ -200,4 +200,20 @@ span {
 .btn-success {
     background-color: rgba(35, 100, 112, 0.911);
     color: white;
+}
+
+.btn-home {
+    text-decoration: none;
+    background-color: lightseagreen;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color ease-in-out 0.1s;
+    bottom: 30px;
+    left: 80px;
+    font-weight: bold;
+}
+.btn-home:hover {
+    background-color: rgb(14, 116, 110);
 }
