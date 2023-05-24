@@ -68,6 +68,7 @@ h1 {
 .row-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
     min-height: 50px;
     column-gap: 0px;
     margin-bottom: 18px;
@@ -90,6 +91,7 @@ h1 {
 .row-header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     min-height: 50px;
     column-gap: 0px;
     margin-bottom: 0px;
