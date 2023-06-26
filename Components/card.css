@@ -10,11 +10,16 @@
 .blank {
     background-color: white;
 }
+
 .row-header {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
     grid-template-columns: repeat(7, 1fr);
     min-height: 50px;
-    column-gap: 0px;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
     margin-bottom: 0px;
     font-weight: bold;
     font-size: 1.2rem;
