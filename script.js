@@ -152,13 +152,13 @@ function removeDuplicate(valuesToRemove) {
 
 // Create the display for the results --------------------------------------------
 
-let i_compl_string = "INDEPENDÊNCIA COMPLETA: ";
-let i_mod_string = "INDEPENDÊNCIA MODIFICADA: ";
-let i_sup_string = "SUPERVISÃO/PREPARAÇÃO: ";
-let i_amin_string = "AJUDA MÍNIMA: ";
-let i_amod_string = "AJUDA MODERADA: ";
-let i_amax_string = "AJUDA MÁXIMA: ";
-let i_at_string = "AJUDA TOTAL: ";
+let i_compl_string = "- INDEPENDÊNCIA COMPLETA: ";
+let i_mod_string = "- INDEPENDÊNCIA MODIFICADA: ";
+let i_sup_string = "- SUPERVISÃO/PREPARAÇÃO: ";
+let i_amin_string = "- AJUDA MÍNIMA: ";
+let i_amod_string = "- AJUDA MODERADA: ";
+let i_amax_string = "- AJUDA MÁXIMA: ";
+let i_at_string = "- AJUDA TOTAL: ";
 
 function i_to_string(array, string_title) {
   if (array.length > 0) {
