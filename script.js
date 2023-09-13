@@ -192,11 +192,55 @@ function showResults() {
   ) {
     let resultBox = document.querySelectorAll(".result-box").forEach((x)=> {x.classList.add("show-result")});
     let paragraph = document.getElementById("p").style.display = "none";
-    result.innerText = `MIF = ${total} / 126 pts (M: ${motor}  C: ${cognitive})  `;
+    result.innerHTML = `<strong>MIF = ${total} / 126 pts (Motor: ${motor}  Cognitivo: ${cognitive}) </strong> `;
     // result2.innerText = `MIF: A-${score1} | B-${score2} | C-${score3} | D-${score4} | E-${score5} | F-${score6} | G-${score7} | H-${score8} | I-${score9} | J-${score10} | K-${score11} | L-${score12} | M-${score13} | N-${score14} | O-${score15} | P-${score16} | Q-${score17} | R-${score18}.   Total = ${total} / 126 pts`;
-    result3.innerText = `MIF = ${total} / 126 pts (M${motor} |  C${cognitive}) - ${i_to_string(i_compl, i_compl_string)} ${i_to_string(i_mod, i_mod_string)} ${i_to_string(i_sup, i_sup_string)}   ${i_to_string(i_amin, i_amin_string)}   ${i_to_string(i_amod, i_amod_string)} ${i_to_string(i_amax, i_amax_string)} ${i_to_string(i_at, i_at_string)}.`;
+    result3.innerHTML = `<strong>MIF = ${total} / 126 pts (Motor: ${motor} |  Cognitivo: ${cognitive}) </strong>
+    <p>${i_to_string(i_compl, i_compl_string)} </p>
+    <p>${i_to_string(i_mod, i_mod_string)} </p>
+    <p>${i_to_string(i_sup, i_sup_string)}   </p>
+    <p>${i_to_string(i_amin, i_amin_string)}   </p>
+    <p>${i_to_string(i_amod, i_amod_string)} </p>
+    <p>${i_to_string(i_amax, i_amax_string)} </p>
+    <p>${i_to_string(i_at, i_at_string)}</p>`;
     // result4.innerText = `MIF = ${total} / 126 pts (M: ${motor}  C: ${cognitive}) | Alimentação - ${data_name1} (${score1}); Higiene pessoal - ${data_name2} (${score2}); Banho - ${data_name3} (${score3}); Vestir metade superior - ${data_name4} (${score4}); Vestir metade inferior - ${data_name5} (${score5}); Sanita - ${data_name6} (${score6}); Bexiga - ${data_name7} (${score7}); Intestino - ${data_name8} (${score8}); Transferências (leito, cadeira, CR) - ${data_name9} (${score9}); Transferências (sanita) - ${data_name10} (${score10}); Transferências (banheira ou chuveiro) - ${data_name11} (${score11}); Locomoção - ${data_name12} (${score12}); Escadas - ${data_name13} (${score13}); Compreensão - ${data_name14} (${score14}); Expressão - ${data_name15} (${score15}); Interação social - ${data_name16} (${score16}); Resolução de problemas - ${data_name17} (${score17}); Memória - ${data_name18} (${score18}).`;
-  }
+
+    result4.innerHTML
+     = 
+       result4.innerHTML
+  = `<strong>MIF = ${total} / 126 pontos (Motor: ${motor} | Cognitivo: ${cognitive})</strong>
+ 
+ <u>AUTOCUIDADOS: </u>
+   <p>- Alimentação: ${score1} --- ${data_name1}; </p>
+   <p>- Higiene pessoal: ${score2} --- ${data_name2}; </p>
+   <p>- Banho: ${score3} --- ${data_name3};</p>
+   <p>- Vestir metade superior: ${score4} --- ${data_name4}; </p> 
+   <p>- Vestir metade inferior: ${score5} --- ${data_name5};   </p>
+   <p>- Sanita: ${score6} --- ${data_name6};  </p>
+ 
+ <u>CONTROLO DE ESFINCTERES:</u>
+  <p>- Bexiga: ${score7} --- ${data_name7};  </p>
+  <p>- Intestino: ${score8} --- ${data_name8}; </p> 
+ 
+ <u>TRANSFERÊNCIAS:</u>
+  <p>- Transferências (leito, cadeira, CR): ${score9} --- ${data_name9};  </p>
+  <p>- Transferências (sanita): ${score10} --- ${data_name10};  </p>
+  <p>- Transferências (banheira ou chuveiro): ${score11} --- ${data_name11}; </p> 
+ 
+ <u>LOCOMOÇÃO:</u>
+  <p>- Locomoção: ${score12} --- ${data_name12};  </p>
+  <p>- Escadas: ${score13} --- ${data_name13};  </p>
+ 
+ <u>COMUNICAÇÃO:</u>
+  <p>- Compreensão: ${score14} --- ${data_name14}; </p> 
+  <p>- Expressão: ${score15} --- ${data_name15};  </p>
+ 
+ <u>CONSCIÊNCIA DO MUNDO EXTERIOR:</u>
+  <p>- Interação social: ${score16} --- ${data_name16}; </p>  
+  <p>- Resolução de problemas: ${score17} --- ${data_name17}; </p> 
+  <p>- Memória: ${score18} --- ${data_name18}</p>`;
+     
+}     
+     
 
 
   // Add the functionality of COPY the text inside the text field --------------------------------------------------------------
