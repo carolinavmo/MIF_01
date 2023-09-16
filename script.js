@@ -210,34 +210,34 @@ function showResults() {
   = `<strong>MIF = ${total} / 126 pontos (Motor: ${motor} | Cognitivo: ${cognitive})</strong>
  
  <u>AUTOCUIDADOS: </u>
-   <p>- Alimentação: ${score1} --- ${data_name1}; </p>
-   <p>- Higiene pessoal: ${score2} --- ${data_name2}; </p>
-   <p>- Banho: ${score3} --- ${data_name3};</p>
-   <p>- Vestir metade superior: ${score4} --- ${data_name4}; </p> 
-   <p>- Vestir metade inferior: ${score5} --- ${data_name5};   </p>
-   <p>- Sanita: ${score6} --- ${data_name6};  </p>
+   <p>- Alimentação: ${score1} -- ${data_name1}; </p>
+   <p>- Higiene pessoal: ${score2} -- ${data_name2}; </p>
+   <p>- Banho: ${score3} -- ${data_name3};</p>
+   <p>- Vestir metade superior: ${score4} -- ${data_name4}; </p> 
+   <p>- Vestir metade inferior: ${score5} -- ${data_name5};   </p>
+   <p>- Sanita: ${score6} -- ${data_name6};  </p>
  
  <u>CONTROLO DE ESFINCTERES:</u>
-  <p>- Bexiga: ${score7} --- ${data_name7};  </p>
-  <p>- Intestino: ${score8} --- ${data_name8}; </p> 
+  <p>- Bexiga: ${score7} -- ${data_name7};  </p>
+  <p>- Intestino: ${score8} -- ${data_name8}; </p> 
  
  <u>TRANSFERÊNCIAS:</u>
-  <p>- Transferências (leito, cadeira, CR): ${score9} --- ${data_name9};  </p>
-  <p>- Transferências (sanita): ${score10} --- ${data_name10};  </p>
-  <p>- Transferências (banheira ou chuveiro): ${score11} --- ${data_name11}; </p> 
+  <p>- Transferências (leito, cadeira, CR): ${score9} -- ${data_name9};  </p>
+  <p>- Transferências (sanita): ${score10} -- ${data_name10};  </p>
+  <p>- Transferências (banheira ou chuveiro): ${score11} -- ${data_name11}; </p> 
  
  <u>LOCOMOÇÃO:</u>
-  <p>- Locomoção: ${score12} --- ${data_name12};  </p>
-  <p>- Escadas: ${score13} --- ${data_name13};  </p>
+  <p>- Locomoção: ${score12} -- ${data_name12};  </p>
+  <p>- Escadas: ${score13} -- ${data_name13};  </p>
  
  <u>COMUNICAÇÃO:</u>
-  <p>- Compreensão: ${score14} --- ${data_name14}; </p> 
-  <p>- Expressão: ${score15} --- ${data_name15};  </p>
+  <p>- Compreensão: ${score14} -- ${data_name14}; </p> 
+  <p>- Expressão: ${score15} -- ${data_name15};  </p>
  
  <u>CONSCIÊNCIA DO MUNDO EXTERIOR:</u>
-  <p>- Interação social: ${score16} --- ${data_name16}; </p>  
-  <p>- Resolução de problemas: ${score17} --- ${data_name17}; </p> 
-  <p>- Memória: ${score18} --- ${data_name18}</p>`;
+  <p>- Interação social: ${score16} -- ${data_name16}; </p>  
+  <p>- Resolução de problemas: ${score17} -- ${data_name17}; </p> 
+  <p>- Memória: ${score18} -- ${data_name18}</p>`;
      
 }     
      
