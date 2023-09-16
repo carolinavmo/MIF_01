@@ -234,7 +234,7 @@ function showResults() {
   <p>- Compreensão: ${score14} -- ${data_name14}; </p> 
   <p>- Expressão: ${score15} -- ${data_name15};  </p>
  
- <u>CONSCIÊNCIA DO MUNDO EXTERIOR:</u>
+ <u>CONHECIMENTO SOCIAL:</u>
   <p>- Interação social: ${score16} -- ${data_name16}; </p>  
   <p>- Resolução de problemas: ${score17} -- ${data_name17}; </p> 
   <p>- Memória: ${score18} -- ${data_name18}</p>`;
