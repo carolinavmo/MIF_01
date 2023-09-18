@@ -14,6 +14,11 @@
 }
 
 
+.purple {
+    border-bottom: 4px solid rgb(147, 93, 179);
+}
+
+
 .footer {
     background-color: rgb(17, 53, 65);
     border-top: 4px solid rgb(39, 202, 194);
