@@ -13,10 +13,20 @@
     text-align: center;
 }
 
-
-.purple {
+.nav-purple {
+    background-color: rgb(17, 53, 65);
     border-bottom: 4px solid rgb(147, 93, 179);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
+
+
 
 
 .footer {
