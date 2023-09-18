@@ -703,8 +703,8 @@ buttons21.forEach((btn) => {
 
 buttons22.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons22);
-    addClass(btn);
+removeClassesCognitive(buttons22);
+    addClassCognitive(btn);
     score22 = parseInt(btn.dataset.value, 10);
     data_name22 = btn.dataset.namedd;
     data_category = btn.dataset.category;
@@ -717,8 +717,8 @@ buttons22.forEach((btn) => {
 
 buttons23.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons23);
-    addClass(btn);
+removeClassesCognitive(buttons23);
+    addClassCognitive(btn);
     score23 = parseInt(btn.dataset.value, 10);
     data_name23 = btn.dataset.nameee;
     data_category = btn.dataset.category;
@@ -731,8 +731,8 @@ buttons23.forEach((btn) => {
 
 buttons24.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons24);
-    addClass(btn);
+removeClassesCognitive(buttons24);
+    addClassCognitive(btn);
     score24 = parseInt(btn.dataset.value, 10);
     data_name24 = btn.dataset.nameff;
     data_category = btn.dataset.category;
@@ -745,8 +745,8 @@ buttons24.forEach((btn) => {
 
 buttons25.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons25);
-    addClass(btn);
+removeClassesCognitive(buttons25);
+    addClassCognitive(btn);
     score25 = parseInt(btn.dataset.value, 10);
     data_name25 = btn.dataset.namegg;
     data_category = btn.dataset.category;
@@ -759,8 +759,8 @@ buttons25.forEach((btn) => {
 
 buttons26.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons26);
-    addClass(btn);
+removeClassesCognitive(buttons26);
+    addClassCognitive(btn);
     score26 = parseInt(btn.dataset.value, 10);
     data_name26 = btn.dataset.namehh;
     data_category = btn.dataset.category;
@@ -773,8 +773,8 @@ buttons26.forEach((btn) => {
 
 buttons27.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons27);
-    addClass(btn);
+removeClassesCognitive(buttons27);
+    addClassCognitive(btn);
     score27 = parseInt(btn.dataset.value, 10);
     data_name27 = btn.dataset.nameii;
     data_category = btn.dataset.category;
@@ -787,8 +787,8 @@ buttons27.forEach((btn) => {
 
 buttons28.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons28);
-    addClass(btn);
+removeClassesCognitive(buttons28);
+    addClassCognitive(btn);
     score28 = parseInt(btn.dataset.value, 10);
     data_name28 = btn.dataset.namejj;
     data_category = btn.dataset.category;
@@ -801,8 +801,8 @@ buttons28.forEach((btn) => {
 
 buttons29.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons29);
-    addClass(btn);
+removeClassesCognitive(buttons29);
+    addClassCognitive(btn);
     score29 = parseInt(btn.dataset.value, 10);
     data_name29 = btn.dataset.namell;
     data_category = btn.dataset.category;
@@ -815,8 +815,8 @@ buttons29.forEach((btn) => {
 
 buttons30.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    removeClasses(buttons30);
-    addClass(btn);
+removeClassesCognitive(buttons30);
+    addClassCognitive(btn);
     score30 = parseInt(btn.dataset.value, 10);
     data_name30 = btn.dataset.namemm;
     data_category = btn.dataset.category;
