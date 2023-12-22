@@ -45,3 +45,10 @@ h1 {
     background-color: rgb(14, 116, 110);
 }
 
+.carol {
+    margin-top: 0;
+    padding-top: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 0px;
+}
