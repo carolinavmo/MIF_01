@@ -3,7 +3,7 @@
     grid-template-columns: repeat(7, 1fr);
     min-height: 50px;
     column-gap: 0px;
-    margin-bottom: 18px;
+    margin-bottom: 60px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
