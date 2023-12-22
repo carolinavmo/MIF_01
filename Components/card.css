@@ -10,16 +10,13 @@
 .blank {
     background-color: white;
 }
-
 .row-header {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
     grid-template-columns: repeat(7, 1fr);
+
+
     min-height: 50px;
-    -webkit-column-gap: 0px;
-       -moz-column-gap: 0px;
-            column-gap: 0px;
+    column-gap: 0px;
     margin-bottom: 0px;
     font-weight: bold;
     font-size: 1.2rem;
@@ -110,6 +107,7 @@ span {
     background-color: rgb(48, 109, 48);
     color: white;
     border-top-left-radius: 5px;
+
 }
 .span-three {
     grid-column: 3 / span 3;
@@ -126,9 +124,10 @@ span {
 /* ----- Left cards ------- */
 .first-card {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: start;
     text-align: left;
-    align-items: center;
+    align-items: start;
     font-weight: bold;
     background-color: rgb(35, 93, 112);
     color: white;
@@ -137,9 +136,10 @@ span {
     padding: 10px 20px;
     font-size: 18px;
     width: 100%;
-    height: 50px;
+    min-height: 50px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 .first-card-fam {
     display: flex;
@@ -185,7 +185,6 @@ span {
     margin-top: 50px;
 
 }
-
 
 .category-card-c {
     display: flex;
@@ -235,4 +234,5 @@ span {
 .cognitive {
     background-color: rgb(90, 26, 38);
 }
+
 
