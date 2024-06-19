@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escala Constant-Murley</title>
+
+    <!-- <link rel="stylesheet" href="Components/navbar.css" /> -->
+    <link rel="stylesheet" href="Components/result.css" />
+    <link rel="stylesheet" href="berg.css" />
+    <link rel="stylesheet" href="./Components/navbar.css">
+
+    <style>
+      .calculate_btn {
+        background-color: #d33069d9;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        width: 200px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .calculate_btn:hover {
+        background-color: #911843;
+
+      }
+      .h:hover {
+        background-color: #111827;
+      }
+
+    </style>
+
+
+
+  </head>
+  <body>
+    <!-- -------------------------  ----- NAVBAR ----------------------->
+    <div class="homepage_nav">
+      <div style="display: flex; ">
+        <a class="" href="index.html" style="font-size: 22px;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#1a86a3}</style><path d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"/></svg>        
+        </a>
+        <p class="" style="padding-left: 10px;">Medicina Física e de Reabilitação </p>
+      </div>
+      <div>
+        <a href="index.html" style="background-color: #d33069; padding: 6px; padding-left: 30px; padding-right: 30px; text-decoration: none; color: white; border-radius: 20px;" >Início</a>
+      </div>
+  </div>
+
+
+    <!-- -------------------------  ----- HEADER TITLE ----------------------->
+    <div class="nav" style="margin-top: 100px;">
+      <h1 style="color: #111827; font-size: 80px;">Constant-Murley Score</h1>
+      <!-- <p style="color: #111827; font-size: 18px;">( Disabilities of the Arm, Shoulder and Hand )</p> -->
+      <p style="margin-top: 10px; margin-bottom: 30px; font-size: 12px; background-color:#EBF5FF ; color: #111827ca; width: fit-content; padding: 2px; padding-left: 8px; padding-right: 8px; border-radius: 10px;"> Atenção: tradução não validada para população portuguesa </p>
+
+    </div>
+
+
+
+
+
+
+    <div class="main-container">
+      <div class="container">
+        <h2 style="margin-bottom: 20px;">A) DOR</h2>
+
+    <!-- -------------------------  ----- SCORE 1 ----------------------->
+        <div class="first-card" style="box-shadow: 0 0 0;">
+          <p>1. Indique o nível mais alto de dor que você sentiu no ombro durante atividades normais nas últimas 24 horas</p>
+          <!-- <p id="span"><strong>Instruções:</strong> Por favor, levante-se. Tente não usar as suas mãos para se apoiar. -->
+          </p>
+        </div>
+        <div style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);">
+            <div class="card" style="padding-top: 40px; padding-left: 70px; padding-right: 70px; ">
+            <input type="range" id="score1" name="cowbell" min="0" max="15" value="0" step="1" style="width: 100%;" oninput="rangeValue_1.innerText = this.value">
+          </div>
+          <div class="card" style="display: flex; justify-content: space-between;padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px;">
+            <p>Dor intolerável (0)</p>
+            <p id="rangeValue_1" style="color: #111827; background-color: white; border-radius: 8px; padding-left: 40px; padding-right: 40px; padding-top: 2px; padding-bottom: 2px; border: 1px solid gray; ;">-</p> 
+            <p>Sem dor (15)</p>
+             
+          </div>
+        </div>
+
+    <!-- ------------------- SECÇÃO B ---------------->
+
+        <h2 style="margin-bottom: 20px; margin-top: 60px;">B) ATIVIDADES DE VIDA DIÁRIAS</h2>
+        <p style="padding-bottom: 20px;">As próximas 4 perguntas tratam das atividades cotidianas que você experimentou na última semana:</p>
+
+        <!-- <div class="row-5">
+          <div
+            class="card level-10 score1"
+            data-value="1"
+          >
+            <div class="p-1"><p>1</p></div>
+            <div class="p-3">
+              <p>
+                Sem dificuldade
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card level-5 score1"
+            data-value="2"
+          >
+            <div class="p-1"><p>2</p></div>
+            <div class="p-3">
+              <p>Dificuldade ligeira</p>
+            </div>
+          </div>
+
+          <div
+            class="card level-3 score1"
+            data-value="3"
+          >
+            <div class="p-1"><p>3</p></div>
+            <div class="p-3">
+              <p>Dificuldade média</p>
+            </div>
+          </div>
+
+          <div
+            class="card level-2 score1"
+            data-value="4">
+            <div class="p-1"><p>4</p></div>
+            <div class="p-3">
+              <p>
+                Muita dificuldade
+                </p>
+            </div>
+            </div>
+
+
+
+            <div
+            class="card level-0 score1"
+            data-value="5">
+            <div class="p-1"><p>5</p></div>
+            <div class="p-3">
+              <p>
+                Incapaz de realizar
+                </p>
+            </div>
+            </div>
+
+
+        </div> -->
+
+    <!-- ------------------------- ---- SCORE 2 ----------------------->
+
+    <div class="first-card">
+        <p>2. O seu sono é perturbado pelo seu ombro? </p>
+        <!-- <p id="span"><strong>Instruções:</strong> Por favor, fique em pé com os pés juntos e sem se apoiar. -->
+        </p>
+
+      </div>
+      <div class="row-3" >
+        <div
+          class="card level-10 score2"
+          data-value="2"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>
+              Não perturbado
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score2"
+          data-value="1"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>Perturbado ocasionalmente</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-0 score2"
+          data-value="0"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>Perturbado todas as noites</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+    <!-- ------------------------  ----- SCORE 3 ----------------------->
+    <div class="first-card" style="margin-top: 20px;">
+        <p>3. Quanto do seu trabalho diário normal, o seu ombro permite que você execute?</p>
+        </p>
+
+      </div>
+      <div style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);">
+        <div class="card" style="padding-top: 40px; padding-left: 70px; padding-right: 70px; ">
+        <input type="range" id="score3" name="cowbell" min="0" max="4" value="0" step="1" style="width: 100%;" oninput="rangeValue_3.innerText = this.value">
+      </div>
+      <div class="card" style="display: flex; justify-content: space-between;padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px;">
+        <p>Nada (0)</p>
+        <p id="rangeValue_3" style="color: #111827; background-color: white; border-radius: 8px; padding-left: 40px; padding-right: 40px; padding-top: 2px; padding-bottom: 2px; border: 1px solid gray; ;">-</p> 
+        <p>Tudo (4)</p>
+      </div>
+    </div>
+
+
+               <!-- ------------------------  ----- SCORE 4 ----------------------->
+               <div class="first-card" style="margin-top: 20px;">
+                <p>4. Quanto da sua atividade recreativa normal, o seu ombro lhe permite realizar?</p>
+                </p>
+        
+              </div>
+              <div style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);">
+                <div class="card" style="padding-top: 40px; padding-left: 70px; padding-right: 70px; ">
+                <input type="range" id="score4" name="cowbell" min="0" max="4" value="0" step="1" style="width: 100%;" oninput="rangeValue_4.innerText = this.value">
+              </div>
+              <div class="card" style="display: flex; justify-content: space-between;padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px;">
+                <p>Nada (0)</p>
+                <p id="rangeValue_4" style="color: #111827; background-color: white; border-radius: 8px; padding-left: 40px; padding-right: 40px; padding-top: 2px; padding-bottom: 2px; border: 1px solid gray; ;">-</p> 
+                <p>Tudo (4)</p>
+              </div>
+            </div>
+
+
+        <!-- ------------------------  ----- SCORE 5 ----------------------->
+        <div class="first-card" style="margin-top: 20px;">
+          <p>5. Até que nível você consegue usar a sua mão confortavelmente?</p>
+          </p>
+  
+        </div>
+        <div class="row-6">
+          <div
+            class="card level-10 score5"
+            data-value="0"
+          >
+            <div class="p-1"><p>+ 0</p></div>
+            <div class="p-3">
+              <p>
+                Abaixo da cintura
+              </p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-5 score5"
+            data-value="2"
+          >
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>Até à cintura</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-3 score5"
+            data-value="4"
+          >
+            <div class="p-1"><p>+ 4</p></div>
+            <div class="p-3">
+              <p>Até ao apêndice xifóideu</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-2 score5"
+            data-value="6">
+            <div class="p-1"><p>+ 6</p></div>
+            <div class="p-3">
+              <p>
+                Até ao pescoço
+                </p>
+            </div>
+            </div>
+  
+  
+  
+            <div
+            class="card level-0 score5"
+            data-value="8">
+            <div class="p-1"><p>+ 8</p></div>
+            <div class="p-3">
+              <p>
+                Até ao topo da cabeça
+                </p>
+            </div>
+            </div>
+  
+  
+            <div
+            class="card level-0 score5"
+            data-value="10">
+            <div class="p-1"><p>+ 10</p></div>
+            <div class="p-3">
+              <p>
+                Acima da cabeça
+                </p>
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    <!-- ------------------- SECÇÃO C ---------------->
+
+    <h2 style="margin-bottom: 20px; margin-top: 60px;">C) MOVIMENTO</h2>
+    <p style="padding-bottom: 20px;">(Realizar os seguintes movimentos apenas com os membros afetados)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ------------------------  ----- SCORE 6 ----------------------->
+        <div class="first-card" style="margin-top: 20px;">
+          <p>6. Elevação Anterior</p>
+          </p>
+  
+        </div>
+        <div class="row-6">
+          <div
+            class="card level-10 score6"
+            data-value="0"
+          >
+            <div class="p-1"><p>+ 0</p></div>
+            <div class="p-3">
+              <p>
+                0 - 30 graus
+              </p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-5 score6"
+            data-value="2"
+          >
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>31 - 60 graus</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-3 score6"
+            data-value="4"
+          >
+            <div class="p-1"><p>+ 4</p></div>
+            <div class="p-3">
+              <p>61 - 90 graus</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-2 score6"
+            data-value="6">
+            <div class="p-1"><p>+ 6</p></div>
+            <div class="p-3">
+              <p>
+                91 - 120 graus
+                </p>
+            </div>
+            </div>
+  
+  
+  
+            <div
+            class="card level-0 score6"
+            data-value="8">
+            <div class="p-1"><p>+ 8</p></div>
+            <div class="p-3">
+              <p>
+                121 - 150 graus
+                </p>
+            </div>
+            </div>
+  
+  
+            <div
+            class="card level-0 score6"
+            data-value="10">
+            <div class="p-1"><p>+ 10</p></div>
+            <div class="p-3">
+              <p>
+                > 150 graus
+                </p>
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- ------------------------  ----- SCORE 7 ----------------------->
+        <div class="first-card" style="margin-top: 20px;">
+          <p>7. Elevação Lateral</p>
+          </p>
+  
+        </div>
+        <div class="row-6">
+          <div
+            class="card level-10 score7"
+            data-value="0"
+          >
+            <div class="p-1"><p>+ 0</p></div>
+            <div class="p-3">
+              <p>
+                0 - 30 graus
+              </p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-5 score7"
+            data-value="2"
+          >
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>31 - 60 graus</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-3 score7"
+            data-value="4"
+          >
+            <div class="p-1"><p>+ 4</p></div>
+            <div class="p-3">
+              <p>61 - 90 graus</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-2 score7"
+            data-value="6">
+            <div class="p-1"><p>+ 6</p></div>
+            <div class="p-3">
+              <p>
+                91 - 120 graus
+                </p>
+            </div>
+            </div>
+  
+  
+  
+            <div
+            class="card level-0 score7"
+            data-value="8">
+            <div class="p-1"><p>+ 8</p></div>
+            <div class="p-3">
+              <p>
+                121 - 150 graus
+                </p>
+            </div>
+            </div>
+  
+  
+            <div
+            class="card level-0 score7"
+            data-value="10">
+            <div class="p-1"><p>+ 10</p></div>
+            <div class="p-3">
+              <p>
+                > 150 graus
+                </p>
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- ------------------------  ----- SCORE 8 ----------------------->
+        <div class="first-card">
+          <p>8. Rotação Externa <span>( assinale todos os que se apliquem )</span></p>
+
+  
+        </div>
+        <div class="row-5">
+          <div
+            class="card level-10 score8"
+            data-value="2"
+          >
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>
+                Mãos atrás da cabeça com os cotovelos para a frente
+              </p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-5 score8"
+            data-value="2"
+          >
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>Mãos atrás da cabeça com os cotovelos para a frente</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-3 score8"
+            data-value="2"
+          >
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>Mãos no topo da cabeça com os cotovelos para a frente</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-2 score8"
+            data-value="2">
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>
+                Mãos no topo da cabeça com os cotovelos para a trás
+                </p>
+            </div>
+            </div>
+  
+  
+  
+            <div
+            class="card level-0 score8"
+            data-value="2">
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>
+                Elevação total
+                </p>
+            </div>
+            </div>
+  
+  
+        </div>
+
+
+        <!-- ------------------------  ----- SCORE 9 ----------------------->
+        <div class="first-card">
+          <p>9. Rotação Interna <span>( doente aponta para a referência anatómica com o polegar )</span>
+          </p>
+          </p>
+  
+        </div>
+        <div class="row-6">
+          <div
+            class="card level-10 score9"
+            data-value="0"
+          >
+            <div class="p-1"><p>+ 0</p></div>
+            <div class="p-3">
+              <p>
+                Coxa lateral
+              </p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-5 score9"
+            data-value="2"
+          >
+            <div class="p-1"><p>+ 2</p></div>
+            <div class="p-3">
+              <p>Nádega</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-3 score9"
+            data-value="4"
+          >
+            <div class="p-1"><p>+ 4</p></div>
+            <div class="p-3">
+              <p>Articulação Sacroilíaca</p>
+            </div>
+          </div>
+  
+          <div
+            class="card level-2 score9"
+            data-value="6">
+            <div class="p-1"><p>+ 6</p></div>
+            <div class="p-3">
+              <p>
+                Cintura (L3)
+                </p>
+            </div>
+            </div>
+  
+  
+  
+            <div
+            class="card level-0 score9"
+            data-value="8">
+            <div class="p-1"><p>+ 8</p></div>
+            <div class="p-3">
+              <p>
+                Vértebra T12
+                </p>
+            </div>
+            </div>
+  
+            <div
+            class="card level-0 score9"
+            data-value="10">
+            <div class="p-1"><p>+ 10</p></div>
+            <div class="p-3">
+              <p>
+                Interescapular (T7)
+                </p>
+            </div>
+            </div>
+        </div>
+
+
+
+
+    <!-- ------------------- SECÇÃO D ---------------->
+
+    <h2 style="margin-bottom: 20px; margin-top: 60px;">D) FORÇA</h2>
+    <p style="padding-bottom: 20px;">A pontuação é calculada a partir da pontuação mais alta de 3 tentativas. <br> A pontuação em pontos corresponde à força em libras (máximo 25 pontos). <br> Se a força for medida em quilogramas, multiplique por 2,2.</p>
+
+
+
+               <!-- ------------------------  ----- SCORE 10 ----------------------->
+               <div class="first-card" style="margin-top: 20px;">
+                <p>10. Força de abdução</p>
+                </p>
+        
+              </div>
+              <div style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);">
+                <div class="card" style="padding-top: 40px; padding-left: 70px; padding-right: 70px; ">
+                <input type="range" id="score10" name="cowbell" min="0" max="25" value="0" step="1" style="width: 100%;" oninput="rangeValue_10.innerText = this.value">
+              </div>
+              <div class="card" style="display: flex; justify-content: space-between;padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px;">
+                <p>0 lbs</p>
+                <p id="rangeValue_10" style="color: #111827; background-color: white; border-radius: 8px; padding-left: 40px; padding-right: 40px; padding-top: 2px; padding-bottom: 2px; border: 1px solid gray; ;">-</p> 
+                <p>25 lbs</p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+<div style="width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 100px;">
+  <div id="calculate_btn" class="calculate_btn">
+    Calcular
+  </div>
+</div>
+
+
+
+    <!-- ---------------- RESULTADOS ---------------------->
+      <div class="result-container">
+
+    <h4>RESULTADO</h4>
+    <p id="p" style="text-align: center; margin-top: 70px; color: rgb(194, 45, 45);">* Selecione todos os campos para obter o resultado.</p>
+    <div class="result-box">
+      <div class="result-1"></div>
+      <div id="copy-1" class="copy">Copiar</div>
+    </div>
+
+
+
+                  <!-- ---------------- INSTRUÇÕES SCORING ---------------------->
+                  <div style="margin-top: 100px; background-color: #f4cbff9c; padding: 16px; border-radius: 10px;">
+                    <p>
+                      O Constant-Murley Score leva cerca de 5 a 7 minutos para concluir. É uma escala de 100 pontos composta por vários parâmetros individuais, que definem o nível de dor e a capacidade de realizar as atividades diárias normais do doente.
+                    </p>
+        
+                    <p style="margin-top: 10px;">É calculado através da seguinte equação:</p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                      <img src="./Images/constant_score.jpg" alt="dash equation" style="width: 70%; margin: 15px;"><br>        
+                    </div>
+
+                    <p style="margin-top: 30px;"><b>D) Força:</b></p>
+                    <p style="margin-bottom: 30px;">
+                      A medição é feita no plano da escápula com abdução de 90° e com a mão está voltada para baixo, punho em pronação. <br>
+                      O doente realiza três abduções máximas contra a resistência com um dinamômetro portátil, sendo a pontuação mais alta sendo registada. <br>
+                      As pontuações variam de 0 a 25, sendo que cada ponto representa 1 libra de força. 
+                      Os doentes que não conseguirem manter os ombros abduzidos a 90° durante o teste devem receber uma pontuação de força de 0.
+                    </p>
+
+        
+                    <a style="font-size: 12px; color: #111827c2;" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/22588743/">[ Measures of adult shoulder function... ]</a> <br>
+                  
+                    <a style="font-size: 12px; color: #111827c2;" target="_blank" href="https://www.physiotutors.com/pt/wp-content/uploads/2023/02/constant_murley_score.pdf">[Constant-Murley questionnaire - physiotutors]</a>
+
+
+                  </div>
+
+
+
+
+      </div>
+
+      </div>
+     </div>
+
+
+    </div>
+</div>
+
+<footer style="width: 100vw; background-color: #EBF5FF; height: 100px; display: flex; justify-content: center; align-items: center;">
+  <p style="font-size: 12px; color: rgb(73, 73, 73);">A informação disponibilizada deverá ser aprovada por um médico.</p>
+</footer>
+
+
+
+    <script src="constant.js"></script>
+  </body>
+</html>

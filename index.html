@@ -1,126 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J8Y9C1HFT"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
     
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3741285037375189"
-     crossorigin="anonymous"></script>
-    
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-    
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3J8Y9C1HFT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3J8Y9C1HFT');
-</script>
-
-    
+        gtag('config', 'G-3J8Y9C1HFT');
+        </script>
     
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escalas de Funcionalidade</title>
-    
-  
+    <title>Escalas de funcionalidade</title>
     <meta name="description" content="Escalas de funcionalidade">
-    <meta name="keywords" content="escalas, funcionalidade, MIF, Barthel, medida, independência, funcional">
+    <meta name="keywords" content="escalas, escala, funcionalidade, MIF, Barthel, medida, independência, funcional, reabilitação">
 
-    <link rel="stylesheet" href="hero.css">
-    <link rel="stylesheet" href="Components/navbar.css">
-    <link rel="stylesheet" href="./Components/cards-index.css">
+    
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
     rel="stylesheet">
+
+
+        <style>
+            .bg-hover {
+                background-image: linear-gradient(135deg, #e4c8e9 1%, #e198de 100%); 
+            }
+            .bg-hover:hover {
+                background-image: linear-gradient(135deg, #f1daf5 1%, #de79db 100%);
+                
+            }
+            .bg-hover-blue {
+                background-image: linear-gradient(135deg, #A0D3E1 0%, #38a6c4 100%);
+            }
+            .bg-hover-blue:hover {
+                background-image: linear-gradient(135deg,  #bce6f2 0%, #17b3de 100%);
+                
+            }
+
+            .bg-hover-yellow {
+                background-image: linear-gradient(135deg, #fffae7 0%, #efd685 100%);
+                background-image: linear-gradient(135deg, #fffcce 10%, #ffed95 90%);
+                background-image: linear-gradient(60deg, #ffddec 10%, #e0afff 90%);
+
+
+            }
+            .bg-hover-yellow:hover {
+                background-image: linear-gradient(135deg,#fcf0c5 0%, #f0d066 100%);
+                background-image: linear-gradient(60deg, #cffffb 0%, #7ccdca 100%);
+                background-image: linear-gradient(60deg, #e4ffa4 10%, #a4f7af 90%);
+
+            }
+
+            .bg-hover-pink {
+                background-image: linear-gradient(60deg, #94e2de 0%, #50c9c3 100%);
+            }
+            .bg-hover-pink:hover {
+                background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+                background-image: linear-gradient(60deg, #cef76f 10%, #92f39f 90%);
+
+            }
+
+
+            
+        </style>
 </head>
 <body>
-    <div class="nav">
-        <h1>
-            ESCALAS DE FUNCIONALIDADE
-        </h1>
-    </div>
-    <div class="container-i">
-        <div class="card-i b-blue">
-            <div id="card-title">Medida de Independência Funcional</div>
-            <div id="card-items">18 items</div>
-            <div id="card-description">Instrumento de avaliação funcional das AVD's.</div>
-            <a id="card-link" href="mif.html">Abrir</a>
-        </div>
+    <!--------------- HEADER SECTION ------------------->                                      
 
-<div class="card-i b-purple">
-    <div id="card-title">FIM + FAM</div>
-    <div id="card-items">30 items</div>
-    <div id="card-description"> <em>Functional independence measure</em> <br/>
-        <em>Functional assessment measure</em></div>
-    <a id="card-link" href="fimfam.html">Abrir</a>
-</div>
+    <header>
+        <nav class="bg-blue-50 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="index.html" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-6 sm:h-9" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#1a86a3}</style><path d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"/></svg>        
+
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Medicina Física e de Reabilitação</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
 
 
-        
-<!-- b-red  -->
-        <div class="card-i b-pink">
-            <div id="card-title">Índice de Barthel</div>
-            <p id="card-items">10 items</p>
-            <p id="card-description">Instrumento de avaliação funcional das AVD's.</p>
-            <a id="card-link" href="barthel.html">Abrir</a>
-        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <div class="card-i b-green">
-            <div id="card-title">Escala de Katz</div>
-            <p id="card-items">6 items</p>
 
-            <p id="card-description">Instrumento de avaliação funcional das AVD's.</p>
-            <a id="card-link" href="katz.html">Abrir</a>
-        </div>
 
-         <div class="card-i b-pink">
-            <div id="card-title">Escala de Equilíbrio de Berg</div>
-            <p id="card-items">14 items</p>
 
-            <p id="card-description">Instrumento de avaliação do equilíbrio estático e dinâmico.</p>
-            <a id="card-link" href="berg.html">Abrir</a>
-        </div>
- 
-        <div class="card-i b-yellow">
-            <div id="card-title">Escala de Lawton e Brody</div>
-            <p id="card-items">8 items</p>
 
-            <p id="card-description">Instrumento de avaliação funcional das AIVD's.</p>
-            <a id="card-link" href="lawton.html">Abrir</a>
-        </div>
-    </div>
-    
-    
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3741285037375189"
-     crossorigin="anonymous"></script>
-<!-- Ad 1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3741285037375189"
-     data-ad-slot="7713014386"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    
-    <amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-3741285037375189"
-     data-ad-slot="7713014386"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
-    
 
-    <div class="footer">
-        <span>A informação disponibilizada deverá ser aprovada por um médico.</span>
+
+
+    <section class="bg-white dark:bg-gray-900 relative overflow-hidden bg-cover bg-top bg-no-repeat" style="background-image: url(./Images/bg_hero.jpg); height:80vh ; ">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12" style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <h1 class="bg-white mb-4 text-6xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white " style="margin-top: 80px; height: fit-content; border-radius: 50px; padding-bottom: 18px; padding-top: 12px; padding-left: 40px; padding-right: 40px;">Escalas de Funcionalidade</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Ferramenta para aplicação de escalas de funcionalidade na consulta.</p>
+
+
+
+
+
+
+
+            <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
+            
+            height: 80vh;
+          "></div>
+
       </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------------- HERO SECTION ------------------->                                      
+    <!-- <section class="bg-blue-50 dark:bg-gray-900" style="height: 85vh;">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl text-gray-900 font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Escalas de Funcionalidade</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Ferramenta para aplicação de escalas de funcionalidade na consulta</p>
+
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="./Images/bg_hero_original.jpg" alt="mockup" class="rounded-full">
+
+            </div>                
+        </div>
+    </section> -->
+
+
+
+
+
+
+    <!-- -------------------------------- ESCALAS SECTION ------------------------->
+    <section class="bg-white dark:bg-gray-900 pb-16">
+        <div class="max-w-screen-md mb-4 lg:mb-16 text-center mx-auto pt-24 ">
+            <h2 class="mb-4 mt-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Várias escalas ao seu dispôr...</h2>
+            <!-- <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p> -->
+        </div>
+        <div class="w-full mb-8 lg:mb-16 text-center mx-auto pt-12 grid grid-cols-3 grid-rows-5 font-bold gap-12  items-center font-bold" style="padding-left: 200px; padding-right: 200px;">
+            <div>
+                <a href="mif.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Medida de Independência Funcional</a>
+
+            </div>
+            <div>
+                <a href="fimfam.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">FIM + FAM</a>
+
+            </div>
+            <div>
+                <a href="barthel.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Índice de Barthel</a>
+            </div>
+            <div>
+                <a href="katz.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala de Katz</a>
+
+            </div>
+            <div>
+                <a href="lawton.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala de <br>Lawton & Brody</a>
+
+            </div>
+            <div>
+                <a href="berg.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala de Berg</a>
+
+            </div>
+            <div>
+                <a href="mrs.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala de Rankin Modificada</a>
+            </div>
+            <div>
+                <a href="nihss.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala NIHSS</a>
+            </div>
+
+
+            <div>
+                <a href="mrcss.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala MRC-SS</a>
+            </div>
+            
+
+            <div>
+                <a href="s5q.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala S5Q</a>
+            </div>
+
+            <div>
+                <a href="rass.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala RASS</a>
+            </div>
+
+            <div>
+                <a href="amigos.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">Escala Rancho Los Amigos</a>
+            </div>
+
+            <div>
+                <a href="sf36.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">SF-36</a>
+            </div>
+
+            <div>
+                <a href="eq5d3l.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-yellow" style="text-decoration: none; font-size: 20px;">EQ-5D</a>
+            </div>
+
+            
+            <!-- <div>
+                <a href="ipaq.html" class="h-28 p-4 w-full rounded-md bg-cyan flex justify-center items-center text-2xl " style="text-decoration: none; font-size: 20px;">IPAQ <br> (versão curta)</a>
+            </div> -->
+
+
+        </div>
+        <!-- <h1 class="w-full mb-8 lg:mb-16 text-center text-4xl mx-auto pt-12 font-bold items-center"
+        style="padding-left: 200px; padding-right: 200px;"
+        >Reabilitação do pavimento pélvico</h1> -->
+
+
+
+
+
+    </section>
+
+
+        <!-- -------------------------------- ESCALAS SECTION ------------------------->
+        <!-- <section class="bg-white dark:bg-gray-900 pb-16">
+            <div class="max-w-screen-md mb-4 lg:mb-16 text-center mx-auto pt-24 ">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Várias escalas ao seu dispôr...</h2>
+            </div>
+            <div class="max-w-screen-md mb-8 lg:mb-16 text-center mx-auto pt-12 flex flex-wrap gap-12 justify-center items-center font-bold">
+                <a href="mif.html" class="w-48 h-48 bg-purple-200 flex justify-center items-center rounded-md bg-hover" style="text-decoration: none; font-size: 20px;">Medida de Independência Funcional</a>
+                <a href="fimfam.html" class="w-48 h-48 bg-purple-200 flex justify-center items-center rounded-md bg-hover" style="text-decoration: none; font-size: 20px;">FIM + FAM</a>
+                <a href="barthel.html" class="w-48 h-48 bg-purple-200 flex justify-center items-center rounded-md bg-hover" style="text-decoration: none; font-size: 20px;">Índice de Barthel</a>
+                <a href="katz.html" class="w-48 h-48 bg-purple-200 flex justify-center items-center rounded-md bg-hover" style="text-decoration: none; font-size: 20px;">Escala de Katz</a>
+                <a href="lawton.html" class="w-48 h-48 bg-purple-200 flex justify-center items-center rounded-md bg-hover " style="text-decoration: none; font-size: 20px;">Escala de <br>Lawton & Brody</a>
+                <a href="berg.html" class="w-48 h-48 bg-purple-200 flex justify-center items-center rounded-md bg-hover" style="text-decoration: none; font-size: 20px;">Escala de Berg</a>
+    
+            </div>
+        </section> -->
+
+
+
+
+
+
+
+    <!-- -------------------------------- MEMBRO SUPERIOR SECTION ------------------------->
+
+
+    <section class="bg-blue-50 dark:bg-gray-900 flex flex-col w-full flex-wrap " style="padding: 100px;">
+        <div class="w-full h-full lg:mb-16 flex justify-center items-center" style="min-width: 200px; ">
+            <h2 class="pt-8 pb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white ">Escalas de Membro Superior</h2>
+        </div>
+        <div class=" w-2/3 text-center grid grid-cols-3 grid-rows-2 font-bold gap-12" style="min-width: 200px;">
+            <a href="dash.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink " style="text-decoration: none; font-size: 20px; ">DASH</a>
+            <a href="quickdash.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink " style="text-decoration: none; font-size: 20px;">QuickDASH</a>
+            <a href="spadi.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink " style="text-decoration: none; font-size: 20px;">SPADI</a>
+            <a href="constant.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink " style="text-decoration: none; font-size: 20px;">Constant Score</a>
+            <a href="uefi.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink " style="text-decoration: none; font-size: 20px;"> UEFI</a>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------- MEMBRO INFERIOR SECTION ------------------------->
+
+    <section class="bg-white dark:bg-gray-900 flex flex-col w-full flex-wrap " style="padding: 100px;">
+        <div class="w-full h-full lg:mb-16 flex justify-center items-center" style="min-width: 200px; ">
+            <h2 class="pt-8 pb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white ">Escalas de Membro Inferior</h2>
+        </div>
+        <div class=" w-2/3 text-center grid grid-cols-3 grid-rows-2 font-bold gap-12" style="min-width: 200px;">
+            <a href="hoos.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">HOOS-12</a>
+            <a href="lefs.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">LEFS</a>
+            <a href="koos12.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">KOOS-12</a>
+            <a href="tlkss.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">LKSS</a>
+            <a href="womac.html"class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">WOMAC</a>
+            <a href="ffi.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">FFI</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- ------------------------------- PARALISIA FACIAL SECTION ------------------------->
+
+    <section class="bg-blue-50 dark:bg-gray-900 flex flex-col w-full flex-wrap " style="padding: 100px;">
+        <div class="w-full h-full lg:mb-16 flex justify-center items-center" style="min-width: 200px; ">
+            <h2 class="pt-8 pb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white ">Paralisia Facial Periférica</h2>
+        </div>
+        <div class=" w-2/3 text-center grid grid-cols-2 grid-rows-2 font-bold gap-12" style="min-width: 200px;">
+            <a href="hb.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">Escala de House-Brackmann</a>
+            <a href="sunny.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">Escala de Sunnybrook</a>
+        </div>
+    </section>
+
+
+
+
+    <!-- ------------------------------- ESPASTICIDADE SECTION ------------------------->
+
+    <section class="bg-white dark:bg-gray-900 flex flex-col w-full flex-wrap " style="padding: 100px;">
+        <div class="w-full h-full lg:mb-16 flex justify-center items-center" style="min-width: 200px; ">
+            <h2 class="pt-8 pb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white ">Espasticidade</h2>
+        </div>
+        <div class=" w-2/3 text-center grid grid-cols-3 grid-rows-2 font-bold gap-12" style="min-width: 200px; padding-bottom: 50px;">
+            <a href="ashworth.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">Escala de Ashworth Modificada</a>
+            <a href="tardieu.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">Escala de Tardieu</a>
+            <a href="penn.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink"  style="text-decoration: none; font-size: 20px;">Escala de Penn</a>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------------------- REAB RESPIRATORIA SECTION ------------------------->
+
+    <section class="bg-blue-50 dark:bg-gray-900 flex flex-col w-full flex-wrap " style="padding: 100px;">
+        <div class="w-full h-full lg:mb-16 flex justify-center items-center" style="min-width: 200px; ">
+            <h2 class="pt-8 pb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white ">Reabilitação Respiratória</h2>
+        </div>
+        <div class=" w-2/3 text-center grid grid-cols-2 grid-rows-2 font-bold gap-12" style="min-width: 200px;">
+            <a href="mrc_resp.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px; ">mMRC</a>
+
+            <a href="cat.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px; ">CAT</a>
+
+            <a href="dasi.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px; ">DASI</a>
+
+            <a href="lcadl.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px; ">LCADL</a>
+
+
+            
+            <!-- <a href="iciq-oab.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">ICIQ-OAB</a>
+            <a href="iciq-sf.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">ICIQ-SF</a>
+            <a href="udi.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">UDI</a>
+            <a href="oxford.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">Escala modificada<br> de Oxford</a>
+            <a href="perfect.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">Perfect</a> -->
+
+        </div>
+
+    </section>
+
+    
+    <!-- -------------------------------- RPP SECTION ------------------------->
+
+    <section class="bg-white dark:bg-gray-900 flex flex-col w-full flex-wrap " style="padding: 100px;">
+        <div class="w-full h-full lg:mb-16 flex justify-center items-center" style="min-width: 200px; ">
+            <h2 class="pt-8 pb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white ">Reabilitação do Pavimento Pélvico</h2>
+        </div>
+        <div class=" w-2/3 text-center grid grid-cols-3 grid-rows-2 font-bold gap-12" style="min-width: 200px;">
+            <a href="wexner.html" class="  p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px; ">Wexner score</a>
+            <a href="iciq-oab.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">ICIQ-OAB</a>
+            <a href="iciq-sf.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">ICIQ-SF</a>
+            <a href="udi.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">UDI</a>
+            <a href="oxford.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">Escala modificada<br> de Oxford</a>
+            <a href="perfect.html" class="p-2 h-20 w-full rounded-md bg-cyan flex justify-center items-center bg-hover-cyan text-2xl bg-hover-pink" style="text-decoration: none; font-size: 20px;">Perfect</a>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="bg-blue-50 dark:bg-gray-900 w-full h-36 flex justify-center items-center font-light text-gray-500">
+            <p style="font-size: 12px; ">A informação disponibilizada deverá ser aprovada por um médico.</p>
+        </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+          
 
 
 </body>

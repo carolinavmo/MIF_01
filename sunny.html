@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escala de Sunnybrook</title>
+
+    <!-- <link rel="stylesheet" href="Components/navbar.css" /> -->
+    <link rel="stylesheet" href="Components/result.css" />
+    <link rel="stylesheet" href="berg.css" />
+    <link rel="stylesheet" href="./Components/navbar.css">
+
+
+  </head>
+  <body>
+    <!-- -------------------------  ----- NAVBAR ----------------------->
+    <div class="homepage_nav">
+      <div style="display: flex; ">
+        <a class="" href="index.html" style="font-size: 22px;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#1a86a3}</style><path d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"/></svg>        
+        </a>
+        <p class="" style="padding-left: 10px;">Medicina Física e de Reabilitação </p>
+      </div>
+      <div>
+        <a href="index.html" style="background-color: #d33069; padding: 6px; padding-left: 30px; padding-right: 30px; text-decoration: none; color: white; border-radius: 20px;" >Início</a>
+      </div>
+  </div>
+
+
+    <!-- -------------------------  ----- HEADER TITLE ----------------------->
+    <div class="nav" style="margin-top: 100px;">
+      <h1 style="color: #111827; font-size: 80px;">Escala de Sunnybrook</h1>
+      <p style="color: #111827; font-size: 18px;">( Escala de graduação facial de Sunnybrook )</p>
+      <!-- <p style="margin-top: 10px; margin-bottom: 30px; font-size: 12px; background-color:#EBF5FF ; color: #111827ca; width: fit-content; padding: 2px; padding-left: 8px; padding-right: 8px; border-radius: 10px;"> Atenção: tradução não validada para população portuguesa </p> -->
+
+    </div>
+
+
+
+
+
+
+    <div class="main-container">
+      <div class="container">
+
+
+
+        <h2 style="margin-bottom: 0px;">SIMETRIA EM REPOUSO </h2>
+        <P style="margin-bottom: 20px; margin-left: 20px;">* Em comparação com o lado contralateral.</P>
+
+
+    <!-- -------------------------  ----- SCORE 1 ----------------------->
+        <div class="first-card">
+          <p>1. Olho</p>
+          <p id="span">Escolha uma opção.
+          </p>
+        </div>
+        <div class="row-4">
+          <div
+            class="card level-10 score1"
+            data-value="0"
+          >
+            <div class="p-1"><p>0</p></div>
+            <div class="p-3">
+              <p>
+                Normal
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card level-5 score1"
+            data-value="1"
+          >
+            <div class="p-1"><p>1</p></div>
+            <div class="p-3">
+              <p>Semicerrado</p>
+            </div>
+          </div>
+
+          <div
+            class="card level-3 score1"
+            data-value="1"
+          >
+            <div class="p-1"><p>1</p></div>
+            <div class="p-3">
+              <p>Arregalado</p>
+            </div>
+          </div>
+
+          <div
+            class="card level-2 score1"
+            data-value="1">
+            <div class="p-1"><p>1</p></div>
+            <div class="p-3">
+              <p>
+                Cirurgia de pálpebra
+                </p>
+            </div>
+            </div>
+
+
+
+        </div>
+
+    <!-- ------------------------- ---- SCORE 2 ----------------------->
+          <div class="first-card">
+            <p>2. Bochecha (sulco nasolabial) </p>
+            </p>
+  
+          </div>
+          <div class="row-4">
+            <div
+              class="card level-10 score2"
+              data-value="0"
+            >
+              <div class="p-1"><p>0</p></div>
+              <div class="p-3">
+                <p>
+                  Normal
+                </p>
+              </div>
+            </div>
+  
+            <div
+              class="card level-5 score2"
+              data-value="2"
+            >
+              <div class="p-1"><p>2</p></div>
+              <div class="p-3">
+                <p>Ausente</p>
+              </div>
+            </div>
+  
+            <div
+              class="card level-3 score2"
+              data-value="1"
+            >
+              <div class="p-1"><p>1</p></div>
+              <div class="p-3">
+                <p>Pouco pronunciado</p>
+              </div>
+            </div>
+  
+            <div
+              class="card level-2 score2"
+              data-value="1">
+              <div class="p-1"><p>1</p></div>
+              <div class="p-3">
+                <p>
+                  Muito pronunciado
+                  </p>
+              </div>
+              </div>
+  
+  
+  
+          </div>
+   
+    <!-- ----------------------- ----- SCORE 3 ----------------------->
+          <div class="first-card">
+            <p>3. Boca (comissura labial) </p>
+            <!-- <p id="span"><strong>Instruções:</strong> Por favor, fique sentado sem apoiar as costas, com os braços cruzados e com os pés apoiados no chão. -->
+            </p>
+  
+          </div>
+          <div class="row-3">
+            <div
+              class="card level-10 score3"
+              data-value="0"
+            >
+              <div class="p-1"><p>0</p></div>
+              <div class="p-3">
+                <p>
+                  Normal
+                </p>
+              </div>
+            </div>
+  
+            <div
+              class="card level-5 score3"
+              data-value="1"
+            >
+              <div class="p-1"><p>1</p></div>
+              <div class="p-3">
+                <p>Canto da boca caído</p>
+              </div>
+            </div>
+  
+            <div
+              class="card level-3 score3"
+              data-value="1"
+            >
+              <div class="p-1"><p>1</p></div>
+              <div class="p-3">
+                <p>Canto da boca desviado (para o lado e para cima)</p>
+              </div>
+            </div>
+
+  
+  
+          </div>
+
+        
+
+
+          <h2 style="margin-bottom: 0px; margin-top: 60px;">SIMETRIA DOS MOVIMENTOS VOLUNTÁRIOS </h2>
+          <P style="margin-bottom: 20px; margin-left: 20px;">* Grau de excursão do músculo, comparado com o lado não afetado.</P>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ---------------------------- SCORE 4 ----------------------->
+    <div class="first-card">
+        <p>1. Enrugar a testa (epicrânio) </p>
+        <!-- <p id="span"><strong>Instruções:</strong> Por favor, sente-se. -->
+        </p>
+
+      </div>
+      <div class="row-5">
+        <div
+          class="card level-0 score4"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria grosseira</b> <br><br>Incapaz de iniciar o movimento /<br> Sem movimento
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score4"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Assimetria grave</b> <br><br>Inicia levemente o movimento /<br> Esboço de contração</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score4"
+          data-value="3"
+        >
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p><b>Assimetria moderada</b> <br><br>Inicia o movimento com leve excursão</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-10 score4"
+          data-value="4">
+          <div class="p-1"><p>4</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria leve</b> <br><br>Movimento quase completo
+              </p>
+          </div>
+          </div>
+
+
+
+          <div
+          class="card level-10 score4"
+          data-value="5">
+          <div class="p-1"><p>5</p></div>
+          <div class="p-3">
+            <p>
+              <b>Simetria normal</b> <br><br>Movimento completo
+              </p>
+          </div>
+          </div>
+
+
+      </div>
+
+
+    <!-- --------------------------- SCORE 5 ----------------------->
+    <div class="first-card">
+        <p>2. Fechar os olhos sem apertar (orbicular dos olhos) </p>
+        <!-- <p id="span"><strong>Instruções:</strong> Coloque as cadeiras perpendicularmente uma em frente a outra. Peça ao doente para transferir-se de uma cadeira com apoio e braço para uma cadeira sem apoio de braço e vice-versa. Você poderá utilizar duas cadeiras (uma com apoio e outra sem apoio de braço) ou uma cama e uma cadeira. -->
+        </p>
+
+      </div>
+      <div class="row-5">
+        <div
+          class="card level-0 score5"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria grosseira</b> <br><br>Incapaz de iniciar o movimento /<br> Sem movimento
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score5"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Assimetria grave</b> <br><br>Inicia levemente o movimento /<br> Esboço de contração</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score5"
+          data-value="3"
+        >
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p><b>Assimetria moderada</b> <br><br>Inicia o movimento com leve excursão</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-10 score5"
+          data-value="4">
+          <div class="p-1"><p>4</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria leve</b> <br><br>Movimento quase completo
+              </p>
+          </div>
+          </div>
+
+
+
+          <div
+          class="card level-10 score5"
+          data-value="5">
+          <div class="p-1"><p>5</p></div>
+          <div class="p-3">
+            <p>
+              <b>Simetria normal</b> <br><br>Movimento completo
+              </p>
+          </div>
+          </div>
+
+
+      </div>
+
+
+    <!-- ----------------------------- SCORE 6 ----------------------->
+    <div class="first-card">
+        <p>3. Sorrir mostrando os dentes (zigomático m. e risório) </p>
+        <!-- <p id="span"><strong>Instruções:</strong> Por favor, fique em pé com os olhos fechados por 10 segundos. -->
+        </p>
+
+      </div>
+      <div class="row-5">
+        <div
+          class="card level-0 score6"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria grosseira</b> <br><br>Incapaz de iniciar o movimento /<br> Sem movimento
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score6"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Assimetria grave</b> <br><br>Inicia levemente o movimento /<br> Esboço de contração</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score6"
+          data-value="3"
+        >
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p><b>Assimetria moderada</b> <br><br>Inicia o movimento com leve excursão</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-10 score6"
+          data-value="4">
+          <div class="p-1"><p>4</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria leve</b> <br><br>Movimento quase completo
+              </p>
+          </div>
+          </div>
+
+
+
+          <div
+          class="card level-10 score6"
+          data-value="5">
+          <div class="p-1"><p>5</p></div>
+          <div class="p-3">
+            <p>
+              <b>Simetria normal</b> <br><br>Movimento completo
+              </p>
+          </div>
+          </div>
+
+
+      </div>
+        
+
+    <!-- ----------------------------- SCORE 7 ----------------------->
+    <div class="first-card">
+        <p>4. Elevar o lábio superior (elevador do lábio) </p>
+        <!-- <p id="span"><strong>Instruções:</strong> Por favor, fique em pé com os pés juntos e sem se apoiar. -->
+        </p>
+
+      </div>
+      <div class="row-5">
+        <div
+          class="card level-0 score7"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria grosseira</b> <br><br>Incapaz de iniciar o movimento /<br> Sem movimento
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score7"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Assimetria grave</b> <br><br>Inicia levemente o movimento /<br> Esboço de contração</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score7"
+          data-value="3"
+        >
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p><b>Assimetria moderada</b> <br><br>Inicia o movimento com leve excursão</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-10 score7"
+          data-value="4">
+          <div class="p-1"><p>4</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria leve</b> <br><br>Movimento quase completo
+              </p>
+          </div>
+          </div>
+
+
+
+          <div
+          class="card level-10 score7"
+          data-value="5">
+          <div class="p-1"><p>5</p></div>
+          <div class="p-3">
+            <p>
+              <b>Simetria normal</b> <br><br>Movimento completo
+              </p>
+          </div>
+          </div>
+
+
+      </div>
+
+
+
+    <!-- ------------------------  ----- SCORE 8 ----------------------->
+    <div class="first-card">
+        <p>5. Assobiar (orbicular da boca)</p>
+        <!-- <p id="span"><strong>Instruções:</strong> Levante o braço a 90º e tente alcançar à frente o mais longe possível, esticando os dedos. O examinador posiciona a régua no fim da ponta dos dedos quando o braço estiver a 90º. A medida a ser registada é a distância que os dedos conseguem alcançar quando o doente de inclina para frente o máximo que ele consegue. Quando possível, peça ao doente para usar ambos os braços para evitar a rotação do tronco. -->
+        </p>
+
+      </div>
+      <div class="row-5">
+        <div
+          class="card level-0 score8"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria grosseira</b> <br><br>Incapaz de iniciar o movimento /<br> Sem movimento
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score8"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Assimetria grave</b> <br><br>Inicia levemente o movimento /<br> Esboço de contração</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score8"
+          data-value="3"
+        >
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p><b>Assimetria moderada</b> <br><br>Inicia o movimento com leve excursão</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-10 score8"
+          data-value="4">
+          <div class="p-1"><p>4</p></div>
+          <div class="p-3">
+            <p>
+              <b>Assimetria leve</b> <br><br>Movimento quase completo
+              </p>
+          </div>
+          </div>
+
+
+
+          <div
+          class="card level-10 score8"
+          data-value="5">
+          <div class="p-1"><p>5</p></div>
+          <div class="p-3">
+            <p>
+              <b>Simetria normal</b> <br><br>Movimento completo
+              </p>
+          </div>
+          </div>
+
+
+      </div>
+
+
+
+
+
+
+      <h2 style="margin-bottom: 0px; margin-top: 60px;">SINCINÉSIAS </h2>
+      <P style="margin-bottom: 20px; margin-left: 20px;">* Quantifique o grau de contração muscular involuntária associada a cada expressão.</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------  ----- SCORE 9 ----------------------->
+    <div class="first-card">
+        <p>1. Enrugar a testa (epicrânio)</p>
+        <!-- <p id="span"><strong>Instruções:</strong> Pegue no sapato/chinelo que está na frente dos seus pés. -->
+        </p>
+
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-10 score9"
+          data-value="0"
+        >
+          <div class="p-1"><p>0</p></div>
+          <div class="p-3">
+            <p>
+              <b>Nenhum</b> <br><br>Sem sincinésia ou sem movimento associado
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score9"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p><b>Leve</b> <br><br>Sincinésia leve</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score9"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Moderado</b> <br><br>Sincinésia óbvio, porém não desfigurante</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score9"
+          data-value="3">
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p>
+              <b>Grave</b> <br><br>Sincinésia desfigurante / movimento grosseiro
+              </p>
+          </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+    <!-- ------------------------  ----- SCORE 10 ----------------------->
+    <div class="first-card">
+        <p>2. Fechar os olhos sem apertar (orbicular dos olhos)</p>
+        </p>
+
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-10 score10"
+          data-value="0"
+        >
+          <div class="p-1"><p>0</p></div>
+          <div class="p-3">
+            <p>
+              <b>Nenhum</b> <br><br>Sem sincinésia ou sem movimento associado
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score10"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p><b>Leve</b> <br><br>Sincinésia leve</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score10"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Moderado</b> <br><br>Sincinésia óbvio, porém não desfigurante</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score10"
+          data-value="3">
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p>
+              <b>Grave</b> <br><br>Sincinésia desfigurante / movimento grosseiro
+              </p>
+          </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+    <!-- ------------------------  ----- SCORE 11 ----------------------->
+    <div class="first-card">
+        <p>3. Sorrir mostrando os dentes (zigomático m. e risório)</p>
+        </p>
+
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-10 score11"
+          data-value="0"
+        >
+          <div class="p-1"><p>0</p></div>
+          <div class="p-3">
+            <p>
+              <b>Nenhum</b> <br><br>Sem sincinésia ou sem movimento associado
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score11"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p><b>Leve</b> <br><br>Sincinésia leve</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score11"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Moderado</b> <br><br>Sincinésia óbvio, porém não desfigurante</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score11"
+          data-value="3">
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p>
+              <b>Grave</b> <br><br>Sincinésia desfigurante / movimento grosseiro
+              </p>
+          </div>
+          </div>
+
+
+
+
+
+      </div>
+
+    <!-- ------------------------ ----- SCORE 12 ----------------------->
+    <div class="first-card">
+        <p>4. Elevar o lábio superior (elevador do lábio)</p>
+        </p>
+
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-10 score12"
+          data-value="0"
+        >
+          <div class="p-1"><p>0</p></div>
+          <div class="p-3">
+            <p>
+              <b>Nenhum</b> <br><br>Sem sincinésia ou sem movimento associado
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score12"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p><b>Leve</b> <br><br>Sincinésia leve</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score12"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Moderado</b> <br><br>Sincinésia óbvio, porém não desfigurante</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score12"
+          data-value="3">
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p>
+              <b>Grave</b> <br><br>Sincinésia desfigurante / movimento grosseiro
+              </p>
+          </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+    <!-- ------------------------  ----- SCORE 13 ----------------------->
+    <div class="first-card">
+        <p>5. Assobiar (orbicular da boca)</p>
+        <!-- <p id="span"><strong>Instruções:</strong> Coloque um pé diretamente à frente do outro na mesma linha. Se achar que não irá conseguir, coloque o pé um pouco mais à frente e ligeiramente para o lado. -->
+        </p>
+
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-10 score13"
+          data-value="0"
+        >
+          <div class="p-1"><p>0</p></div>
+          <div class="p-3">
+            <p>
+              <b>Nenhum</b> <br><br>Sem sincinésia ou sem movimento associado
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score13"
+          data-value="1"
+        >
+          <div class="p-1"><p>1</p></div>
+          <div class="p-3">
+            <p><b>Leve</b> <br><br>Sincinésia leve</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-3 score13"
+          data-value="2"
+        >
+          <div class="p-1"><p>2</p></div>
+          <div class="p-3">
+            <p><b>Moderado</b> <br><br>Sincinésia óbvio, porém não desfigurante</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-2 score13"
+          data-value="3">
+          <div class="p-1"><p>3</p></div>
+          <div class="p-3">
+            <p>
+              <b>Grave</b> <br><br>Sincinésia desfigurante / movimento grosseiro
+              </p>
+          </div>
+          </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+        <!-- ---------------- RESULTADOS ---------------------->
+        <div class="result-container">
+          <h4>RESULTADO</h4>
+          <p id="p" style="text-align: center; margin-top: 70px; color: rgb(194, 45, 45);">* Selecione todos os campos para obter o resultado.</p>
+          <div class="result-box">
+            <div class="result-1"></div>
+            <div id="copy-1" class="copy">Copiar</div>
+          </div>
+                  <!-- ---------------- INSTRUÇÕES SCORING ---------------------->
+          <div style="margin-top: 60px; background-color: #f4cbff9c; padding: 16px; border-radius: 10px;">
+            <p>
+              É uma escala usada para avaliar a função facial, subdividida em três domínios: 
+            </p>
+            <ol style="margin-left: 40px; margin-top: 10px;">
+              <li>Simetria em repouso dos olhos, do sulco naso-
+                labial e do canto da boca; </li>
+                <li>
+                  Movimentos voluntários (movimentos e expressões faciais como fechar os olhos e sorrir);
+                </li>
+                <li>
+                  Sincinesias associadas aos movimentos voluntários testados;
+                </li>
+              </ol>
+
+              <p style="margin-top: 20px;">
+                Os valores variam entre 0 (paralisia total) e 100 (função facial normal).
+              </p>
+  
+            <p style="margin-top: 20px; text-decoration: underline;">É calculada através da seguinte equação:</p>
+
+            <img src="./Images/sunny_1.jpg" alt="dash equation" style="width: 90%; margin: 15px;">
+
+
+            <img src="./Images/sunny_2.jpg" alt="dash equation" style="width: 90%; margin: 15px;">
+
+
+            <p style=" margin-top: 40px;">
+              <a style="font-size: 12px; color: #111827c2;" target="_blank" href="https://bdm.unb.br/bitstream/10483/23702/1/2018_ThamiresKelyMendoncaDeMelo_tcc.pdf">https://bdm.unb.br/bitstream/10483/23702/1/2018_ThamiresKelyMendoncaDeMelo_tcc.pdf</a>
+            </p>
+            <p >
+              <a style="font-size: 12px; color: #111827c2;" target="_blank" href="https://sunnybrook.ca/uploads/FacialGradingSystem.pdf">https://sunnybrook.ca/uploads/FacialGradingSystem.pdf</a>
+            </p>
+
+
+
+            
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+
+    </div>
+</div>
+
+<footer style="width: 100vw; background-color: #EBF5FF; height: 100px; display: flex; justify-content: center; align-items: center;">
+  <p style="font-size: 12px; color: rgb(73, 73, 73);">A informação disponibilizada deverá ser aprovada por um médico.</p>
+</footer>
+
+
+
+    <script src="sunny.js"></script>
+  </body>
+</html>

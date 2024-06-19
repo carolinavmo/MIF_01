@@ -32,7 +32,7 @@ h1 {
 /* --------------------- NAVBAR BARTHEL ------------------------------------*/
 
 
-.nav {
+/* .nav {
     background-color: rgb(17, 53, 65);
     border-bottom: 5px solid rgb(130, 202, 22);
     height: 100px;
@@ -43,7 +43,7 @@ h1 {
     font-size: 1.2rem;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     text-align: center;
-}
+} */
 
 
 .footer {
@@ -123,6 +123,16 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+}
+.p-1-rass {
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    min-height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
 
 }
 .p-2 {

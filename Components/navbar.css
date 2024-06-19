@@ -1,6 +1,6 @@
-.nav {
+/* .nav {
     background-color: rgb(17, 53, 65);
-    /* background-color: rgb(99, 174, 197); */
+    
     border-bottom: 4px solid rgb(39, 202, 194);
 
     height: 100px;
@@ -11,7 +11,26 @@
     font-size: 1.2rem;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
     text-align: center;
+} */
+
+
+
+
+.nav {
+  background-color: rgb(255, 255, 255);
+  color: #0f0f0f;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
 }
+
+
+
+
 
 .nav-purple {
     background-color: rgb(17, 53, 65);
@@ -62,4 +81,199 @@
   .footer {
     min-width: 400px;
   }
+}
+
+
+.homepage_nav {
+  width: 100vw;
+  min-height: 60px;
+  background-color: #EBF5FF;
+  /* background-color: #050D10; */
+  color: #0f0f0f;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.homepage_banner {
+  width: 100vw;
+  min-height: 500px;
+  height: 90vh;
+  background-color: #113541;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: url(../Images/bg_black.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 100px;
+  /* border-bottom: 4px solid rgb(39, 176, 176); */
+}
+.homepage_banner > h1 {
+  width: 500px;
+  min-width: 300px;
+  font-size: 44px;
+  text-align:left;
+  color: rgb(19, 19, 19);
+  color: white;
+}
+.homepage_grid_container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 200px;
+  padding-top: 100px;
+
+
+
+}
+.homepage_box {
+  /* width: 200px;
+  height: 200px; */
+  width: 100%;
+  min-width: 300px;
+  height: 70px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.homepage_subtitle {
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 30px;
+  color: #18181B;
+}
+
+.blue {
+  background-color: rgb(185, 216, 243);
+  color: #1b1b1b;
+
+}
+
+.blue:hover {
+  /* border: 4px solid rgb(23, 65, 80); */
+  background-color: rgb(144, 199, 246);
+
+}
+.yellow {
+  background-color: rgb(255, 255, 171); 
+  color: rgb(28, 28, 28);
+}
+.yellow:hover {
+  background-color: rgb(255, 255, 133); 
+
+}
+
+.pink {
+  background-color: rgb(255, 186, 230); 
+  color: rgb(28, 28, 28);
+}
+.pink:hover {
+  background-color: rgb(248, 156, 214); 
+
+}
+
+.green {
+  background-color: rgb(200, 255, 186); 
+  color: rgb(28, 28, 28);
+}
+.green:hover {
+  background-color: rgb(181, 248, 156); 
+
+}
+
+.homepage_box > a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INPUT RANGE STYLE
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #0e1f32;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -8px; /* Centers thumb on the track */
+  background-color: #b5114f;
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 0.7rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #b5114f;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #0e1f32;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #b5114f;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 0.7rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #b5114f;
+  outline-offset: 0.125rem;
 }

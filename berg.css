@@ -32,7 +32,7 @@ h1 {
 /* --------------------- NAVBAR BARTHEL ------------------------------------*/
 
 
-.nav {
+/* .nav {
     background-color: rgb(17, 53, 65);
     border-bottom: 4px solid rgb(170, 32, 90);
     height: 100px;
@@ -43,7 +43,7 @@ h1 {
     font-size: 1.2rem;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     text-align: center;
-}
+} */
 
 
 .footer {
@@ -74,6 +74,51 @@ h1 {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+.row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.row-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.row-11 {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    min-height: 50px;
+    column-gap: 0px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
 
 .blank {
     background-color: white;
@@ -94,6 +139,20 @@ h1 {
     background-color: rgb(237, 251, 255);
     transition: ease-in-out 0.1ms;    
 }
+
+.card-ipaq {
+    background-color: rgb(237, 251, 255);
+    transition: ease-in-out 0.1ms;    
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
 .header {
     background-color: rgb(38, 62, 70);
     color: white;
@@ -217,3 +276,4 @@ span {
 .btn-home:hover {
     background-color: rgb(14, 116, 110);
 }
+

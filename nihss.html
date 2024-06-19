@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIHSS</title>
+
+    <link rel="stylesheet" href="Components/navbar.css">
+    <link rel="stylesheet" href="nihss.css">
+    <link rel="stylesheet" href="Components/result.css">
+      <link rel="stylesheet" href="Components/style.css">
+
+</head>
+<body>
+    <!-- -------------------------  ----- NAVBAR ----------------------->
+    <div class="homepage_nav">
+      <div style="display: flex; ">
+        <a class="" href="index.html" style="font-size: 22px;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#1a86a3}</style><path d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"/></svg>        
+        </a>
+        <p class="" style="padding-left: 10px;">Medicina Física e de Reabilitação </p>
+      </div>
+      <div>
+        <a href="index.html" style="background-color: #d33069; padding: 6px; padding-left: 30px; padding-right: 30px; text-decoration: none; color: white; border-radius: 20px;" >Início</a>
+      </div>
+  </div>
+
+
+    <!-- -------------------------  ----- HEADER TITLE ----------------------->
+    <div class="nav" style="margin-top: 100px;">
+      <h1 style="color: #111827; font-size: 80px;">NIHSS</h1>
+      <p style="color: #111827; font-size: 18px;">( The National Institutes of Health Stroke Scale )</p>
+
+      <!-- <p style="color: #111827; font-size: 18px;">( Disabilities of the Arm, Shoulder and Hand )</p> -->
+    </div>
+
+
+
+
+
+
+<div class="container">
+    <div class="main-container">
+
+      <div class="first-card">
+        <p>1A - Nível de consciência</p>
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-10 score1"
+          data-category = "intestino"
+          data-value="0"
+          data-namea="controlo perfeito"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Alerta.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score1"
+          data-category = "intestino"
+          data-value="1"
+          data-namea="problemas ocasionais"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Sonolento, mas despertável com mínima estimulação.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-0 score1"
+          data-category = "intestino"
+          data-value="2"
+          data-namea="problemas habituais"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Sonolento, requer estimulação repetida para responder.</p>
+          </div>
+        </div>
+
+        <div
+          class="card level-0 score1"
+          data-category = "intestino"
+          data-value="3"
+          data-namea="problemas habituais"
+        >
+          <div class="p-1"><p>+ 3</p></div>
+          <div class="p-3">
+            <p>Coma.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+<!-- ----- ORIENTAÇÃO ---------------------------------------------------------------------------------->
+      <div class="first-card">
+        <p>1B - Orientação <span>[ pergunte o mês e idade ]</span></p>
+      </div>
+      <div class="row-3">
+        <div
+          class="card level-10 score2"
+          data-category = "bexiga"
+          data-value="0"
+          data-nameb="controlo perfeito"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Responde a ambas questões corretamente.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score2"
+          data-category = "bexiga"
+          data-value="1"
+          data-nameb="problemas ocasionais"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Responde a uma questão corretamente.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-0 score2"
+          data-category = "bexiga"
+          data-value="2"
+          data-nameb="problemas habituais"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Ambas respostas são incorrectas.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ----- COMANDOS ---------------------------------------------------------------------------------->
+      <div class="first-card">
+        <p>1C - Comandos <span>[ Abrir e fechar os olhos, abrir e fechar a mão ]</span></p>
+      </div>
+      <div class="row-3">
+        <div
+          class="card level-10 score3"
+          data-category = "bexiga"
+          data-value="0"
+          data-nameb="controlo perfeito"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Realiza a ambas tarefas corretamente.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score3"
+          data-category = "bexiga"
+          data-value="1"
+          data-nameb="problemas ocasionais"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Realiza uma tarefa corretamente.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-0 score3"
+          data-category = "bexiga"
+          data-value="2"
+          data-nameb="problemas habituais"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Não realiza nenhuma tarefa corretamente.</p>
+          </div>
+        </div>
+
+      </div>
+
+<!-- ----- OLHAR --------  D  -------------------------------------------------------------------------->
+      <div class="first-card">
+        <p>2. Olhar <span>[ movimento ocular no plano horizontal ]</span></p>
+      </div>
+      <div class="row-3">
+        <div
+          class="card level-10 score4"
+          data-category = "sanita"
+          data-value="0"
+          data-named="independente"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Normal.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-5 score4"
+          data-category = "sanita"
+          data-value="1"
+          data-named="ajuda parcial"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Paralisia parcial do olhar.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card level-0 score4"
+          data-category = "sanita"
+          data-value="2"
+          data-named="totalmente dependente"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Desvio forçado do olhar.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+<!-- ----- CAMPOS VISUAIS-------  E --- SCORE 5  -------------------------------------------------------------------------->
+<div class="first-card">
+    <p>3. Campos visuais</p>
+  </div>
+  <div class="row-4">
+    <div
+      class="card level-10 score5"
+      data-category = "alimentação"
+      data-value="0"
+      data-namee="independente"
+    >
+      <div class="p-1"><p>+ 0</p></div>
+      <div class="p-3">
+        <p>
+          Sem défices campimétricos.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="card level-5 score5"
+      data-category = "alimentação"
+      data-value="1"
+      data-namee="ajuda parcial"
+    >
+      <div class="p-1"><p>+ 1</p></div>
+      <div class="p-3">
+        <p>
+          Hemianopsia parcial.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="card level-0 score5"
+      data-category = "alimentação"
+      data-value="2"
+      data-namee="impossível"
+    >
+      <div class="p-1"><p>+ 2</p></div>
+      <div class="p-3">
+        <p>Hemianopsia completa.</p>
+      </div>
+    </div>
+
+
+    <div
+    class="card level-0 score5"
+    data-category = "alimentação"
+    data-value="3  "
+    data-namee="impossível"
+  >
+    <div class="p-1"><p>+ 3</p></div>
+    <div class="p-3">
+      <p>Hemianopsia bilateral <br> (incluindo cegueira cortical).</p>
+    </div>
+  </div>
+
+  </div>
+
+
+
+<!-- ----- TRANSFERÊNCIA ---  F --- SCORE 6  -------------------------------------------------------------------------->
+<div class="first-card">
+    <p>4. Paralisia facial</p>
+  </div>
+  <div class="row-4">
+    <div
+      class="card level-15 score6"
+      data-category = "transferência"
+      data-value="0"
+      data-namef="independente"
+    >
+      <div class="p-1"><p>+ 0</p></div>
+      <div class="p-3">
+        <p>
+          Movimentos simétricos e normais.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="card level-10 score6"
+      data-category = "transferência"
+      data-value="1"
+      data-namef="ajuda minor"
+    >
+      <div class="p-1"><p>+ 1</p></div>
+      <div class="p-3">
+        <p>
+         Paralisia facial minor. <br>
+         ( apagamento de prega nasolabial, assimetria no sorriso )
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="card level-5 score6"
+      data-category = "transferência"
+      data-value="2"
+      data-namef="ajuda maior"
+    >
+      <div class="p-1"><p>+ 2</p></div>
+      <div class="p-3">
+        <p>Paralisia facial central. <br>
+          ( região inferior da face )</p>
+      </div>
+    </div>
+
+        <div
+      class="card level-0 score6"
+      data-category = "transferência"
+      data-value="3"
+      data-namef="dependente"
+    >
+      <div class="p-1"><p>+ 3</p></div>
+      <div class="p-3">
+        <p>Paralisia facial central completa. <br>
+        ( ausência de movimentos faciais das regiões superior e inferior da face ) </p>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- ----- MOBILIDADE ---  G --- SCORE 7  -------------------------------------------------------------------------->
+<div class="first-card">
+    <p>5A. Força muscular - Membro superior esquerdo </p>
+    <p>
+      <span style="margin-left: 0px;">[ Posição: extensão
+        dos braços com as palmas para baixo a 90º se sentado ou a
+        45º se deitado. É valorizada queda do braço se esta
+        ocorre antes de 10 segundos. ]</span>
+    </p>
+
+    
+  </div>
+  <div class="row-6">
+    <div
+      class="card level-15 score7"
+      data-category = "0"
+      data-value="0"
+      data-nameg="independente"
+    >
+      <div class="p-1"><p>+ 0</p></div>
+      <div class="p-3">
+        <p>
+          Sem queda. <br>  Mantém o braço a 90º (ou 45º) por 10 segundos completos.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="card level-10 score7"
+      data-category = "1"
+      data-value="1"
+      data-nameg="com ajuda"
+    >
+      <div class="p-1"><p>+ 1</p></div>
+      <div class="p-3">
+        <p>
+          Queda antes dos 10 segundos, <br> sem tocar na cama ou outro suporte.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="card level-5 score7"
+      data-category = "2"
+      data-value="2"
+      data-nameg="independente em CR"
+    >
+      <div class="p-1"><p>+ 2</p></div>
+      <div class="p-3">
+        <p>Alguma força contra a gravidade. <br> Não atinge ou não mantém a 90º (ou 45º) </p>
+      </div>
+    </div>
+
+        <div
+      class="card level-0 score7"
+      data-category = "3"
+      data-value="3"
+      data-nameg="impossível"
+    >
+      <div class="p-1"><p>+ 3</p></div>
+      <div class="p-3">
+        <p>Sem força contra a gravidade.</p>
+      </div>
+    </div>
+
+
+    <div
+    class="card level-0 score7"
+    data-category = "4"
+    data-value="4"
+    data-nameg="impossível"
+  >
+    <div class="p-1"><p>+ 4</p></div>
+    <div class="p-3">
+      <p>Sem movimento.</p>
+    </div>
+  </div>
+
+  <div
+  class="card level-0 score7"
+  data-category = "NT"
+  data-value="NT"
+  data-nameg="impossível"
+  >
+  <div class="p-1"><p>NT</p></div>
+  <div class="p-3">
+    <p>Não testável.
+      <br> ( em caso de amputação ou fusão de articulação )
+    </p>
+  </div>
+  </div>
+
+
+  </div>
+
+
+<!-- ----- VESTIR ---  H --- SCORE 8  -------------------------------------------------------------------------->
+<div class="first-card">
+  <p>5B. Força muscular - Membro superior direito </p>
+  <p>
+    <span style="margin-left: 0px;">[ Posição: extensão
+      dos braços com as palmas para baixo a 90º se sentado ou a
+      45º se deitado. É valorizada queda do braço se esta
+      ocorre antes de 10 segundos. ]</span>
+  </p>
+
+  
+</div>
+<div class="row-6">
+  <div
+    class="card level-15 score8"
+    data-category = "0"
+    data-value="0"
+    data-nameg="independente"
+  >
+    <div class="p-1"><p>+ 0</p></div>
+    <div class="p-3">
+      <p>
+        Sem queda. <br>  Mantém o braço a 90º (ou 45º) por 10 segundos completos.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="card level-10 score8"
+    data-category = "1"
+    data-value="1"
+    data-nameg="com ajuda"
+  >
+    <div class="p-1"><p>+ 1</p></div>
+    <div class="p-3">
+      <p>
+        Queda antes dos 10 segundos, <br> sem tocar na cama ou outro suporte.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="card level-5 score8"
+    data-category = "2"
+    data-value="2"
+    data-nameg="independente em CR"
+  >
+    <div class="p-1"><p>+ 2</p></div>
+    <div class="p-3">
+      <p>Alguma força contra a gravidade. <br> Não atinge ou não mantém a 90º (ou 45º)</p>
+    </div>
+  </div>
+
+      <div
+    class="card level-0 score8"
+    data-category = "3"
+    data-value="3"
+    data-nameg="impossível"
+  >
+    <div class="p-1"><p>+ 3</p></div>
+    <div class="p-3">
+      <p>Sem força contra a gravidade.</p>
+    </div>
+  </div>
+
+
+  <div
+  class="card level-0 score8"
+  data-category = "4"
+  data-value="4"
+  data-nameg="impossível"
+>
+  <div class="p-1"><p>+ 4</p></div>
+  <div class="p-3">
+    <p>Sem movimento.</p>
+  </div>
+</div>
+
+<div
+class="card level-0 score8"
+data-category = "NT"
+data-value="NT"
+data-nameg="impossível"
+>
+<div class="p-1"><p>NT</p></div>
+<div class="p-3">
+  <p>Não testável.
+    <br> ( em caso de amputação ou fusão de articulação )
+  </p>
+</div>
+</div>
+
+</div>
+
+
+<!-- ----- ESCADAS ---  I --- SCORE 9  -------------------------------------------------------------------------->
+<div class="first-card">
+  <p>6A. Força muscular - Membro inferior esquerdo </p>
+  <p>
+    <span style="margin-left: 0px;">[ Posição: extensão a
+      30º (sempre na posição supina). É valorizada queda se esta ocorre antes de 5 segundos. ]</span>
+  </p>
+
+  
+</div>
+<div class="row-6">
+  <div
+    class="card level-15 score9"
+    data-category = "0"
+    data-value="0"
+    data-nameg="independente"
+  >
+    <div class="p-1"><p>+ 0</p></div>
+    <div class="p-3">
+      <p>
+        Sem queda. <br>  Mantém a perna a 30º por 5 segundos completos.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="card level-10 score9"
+    data-category = "1"
+    data-value="1"
+    data-nameg="com ajuda"
+  >
+    <div class="p-1"><p>+ 1</p></div>
+    <div class="p-3">
+      <p>
+        Mantém a perna a 30º, mas com queda antes dos 5 segundos. <br> sem tocar na cama ou outro suporte.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="card level-5 score9"
+    data-category = "2"
+    data-value="2"
+    data-nameg="independente em CR"
+  >
+    <div class="p-1"><p>+ 2</p></div>
+    <div class="p-3">
+      <p>Alguma força contra a gravidade. <br> Não atinge ou não mantém a 30º.</p>
+    </div>
+  </div>
+
+      <div
+    class="card level-0 score9"
+    data-category = "3"
+    data-value="3"
+    data-nameg="impossível"
+  >
+    <div class="p-1"><p>+ 3</p></div>
+    <div class="p-3">
+      <p>Sem força contra a gravidade.</p>
+    </div>
+  </div>
+
+
+  <div
+  class="card level-0 score9"
+  data-category = "4"
+  data-value="4"
+  data-nameg="impossível"
+>
+  <div class="p-1"><p>+ 4</p></div>
+  <div class="p-3">
+    <p>Sem movimento.</p>
+  </div>
+</div>
+
+<div
+class="card level-0 score9"
+data-category = "NT"
+data-value="NT"
+data-nameg="impossível"
+>
+<div class="p-1"><p>NT</p></div>
+<div class="p-3">
+  <p>Não testável.
+    <br> ( em caso de amputação ou fusão de articulação )
+  </p>
+</div>
+</div>
+
+
+
+</div>
+
+
+      <!-- ----- BANHO --- J --- SCORE 10 ---------------------------------------------------------------->
+      <div class="first-card">
+        <p>6B. Força muscular - Membro inferior direito </p>
+        <p>
+          <span style="margin-left: 0px;">[ Posição: extensão a
+            30º (sempre na posição supina). É valorizada queda se esta ocorre antes de 5 segundos. ]</span>
+        </p>
+      
+        
+      </div>
+      <div class="row-6">
+        <div
+          class="card level-15 score10"
+          data-category = "0"
+          data-value="0"
+          data-nameg="independente"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Sem queda. <br>  Mantém a perna a 30º por 5 segundos completos.
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-10 score10"
+          data-category = "1"
+          data-value="1"
+          data-nameg="com ajuda"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Mantém a perna a 30º, mas com queda antes dos 5 segundos. <br> sem tocar na cama ou outro suporte.
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-5 score10"
+          data-category = "2"
+          data-value="2"
+          data-nameg="independente em CR"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Alguma força contra a gravidade. <br> Não atinge ou não mantém a 30º.</p>
+          </div>
+        </div>
+      
+            <div
+          class="card level-0 score10"
+          data-category = "3"
+          data-value="3"
+          data-nameg="impossível"
+        >
+          <div class="p-1"><p>+ 3</p></div>
+          <div class="p-3">
+            <p>Sem força contra a gravidade.</p>
+          </div>
+        </div>
+      
+      
+        <div
+        class="card level-0 score10"
+        data-category = "4"
+        data-value="4"
+        data-nameg="impossível"
+      >
+        <div class="p-1"><p>+ 4</p></div>
+        <div class="p-3">
+          <p>Sem movimento.</p>
+        </div>
+      </div>
+
+      <div
+      class="card level-0 score10"
+      data-category = "NT"
+      data-value="NT"
+      data-nameg="impossível"
+      >
+      <div class="p-1"><p>NT</p></div>
+      <div class="p-3">
+        <p>Não testável.
+          <br> ( em caso de amputação ou fusão de articulação )
+        </p>
+      </div>
+      </div>
+
+
+      
+      </div>
+
+
+
+      <!-- -----  --- J --- SCORE 11 ---------------------------------------------------------------->
+      <div class="first-card">
+        <p>7. Ataxia dos membros </p>
+
+      
+        
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-15 score11"
+          data-category = "0"
+          data-value="0"
+          data-nameg="independente"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Sem ataxia. 
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-10 score11"
+          data-category = "1"
+          data-value="1"
+          data-nameg="com ajuda"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Presente em 1 membro.
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-2 score11"
+          data-category = "2"
+          data-value="2"
+          data-nameg="independente em CR"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Presente em 2 membros.</p>
+          </div>
+        </div>
+
+        <div
+        class="card level-2 score11"
+        data-category = "NT"
+        data-value="NT"
+        data-nameg="independente em CR"
+      >
+        <div class="p-1"><p>NT</p></div>
+        <div class="p-3">
+          <p>Não testável.</p>
+        </div>
+      </div>
+      
+
+
+
+      
+      </div>
+
+      <!-- -----  --- J --- SCORE 12 ---------------------------------------------------------------->
+      <div class="first-card">
+        <p>8. Sensibilidade </p>
+
+      
+        
+      </div>
+      <div class="row-3">
+        <div
+          class="card level-15 score12"
+          data-category = "mobilidade"
+          data-value="0"
+          data-nameg="independente"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Normal. 
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-5 score12"
+          data-category = "mobilidade"
+          data-value="1"
+          data-nameg="com ajuda"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Diminuição da sensibilidade ligeira a moderada.
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-2 score12"
+          data-category = "mobilidade"
+          data-value="2"
+          data-nameg="independente em CR"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Diminuição da sensibilidade grave a total.</p>
+          </div>
+        </div>
+
+
+      
+
+
+
+      
+      </div>
+
+
+
+      <!-- -----  --- J --- SCORE 13 ---------------------------------------------------------------->
+
+      <div class="first-card">
+        <p>9. Linguagem </p>  
+        
+      </div>
+      <div class="row-4">
+        <div
+          class="card level-15 score13"
+          data-category = "mobilidade"
+          data-value="0"
+          data-nameg="independente"
+        >
+          <div class="p-1"><p>+ 0</p></div>
+          <div class="p-3">
+            <p>
+              Sem afasia. 
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-10 score13"
+          data-category = "mobilidade"
+          data-value="1"
+          data-nameg="com ajuda"
+        >
+          <div class="p-1"><p>+ 1</p></div>
+          <div class="p-3">
+            <p>
+              Afasia ligeira a moderada.
+            </p>
+          </div>
+        </div>
+      
+        <div
+          class="card level-2 score13"
+          data-category = "mobilidade"
+          data-value="2"
+          data-nameg="independente em CR"
+        >
+          <div class="p-1"><p>+ 2</p></div>
+          <div class="p-3">
+            <p>Afasia grave.</p>
+          </div>
+        </div>
+
+        <div
+        class="card level-2 score13"
+        data-category = "mobilidade"
+        data-value="3"
+        data-nameg="independente em CR"
+      >
+        <div class="p-1"><p>+ 3</p></div>
+        <div class="p-3">
+          <p>Afasia global / Mutismo.</p>
+        </div>
+      </div>
+      
+
+
+
+      
+      </div>  
+
+
+
+            <!-- -----  --- J --- SCORE 14 ---------------------------------------------------------------->
+
+            <div class="first-card">
+              <p>10. Disartria </p>  
+              
+            </div>
+            <div class="row-4" >
+              <div
+                class="card level-15 score14" 
+                data-category = "0"
+                data-value="0"
+                data-nameg="independente"
+              >
+                <div class="p-1"><p>+ 0</p></div>
+                <div class="p-3">
+                  <p>
+                    Sem disartria. 
+                  </p>
+                </div>
+              </div>
+            
+              <div
+                class="card level-5 score14"
+                data-category = "1"
+                data-value="1"
+                data-nameg="com ajuda"
+              >
+                <div class="p-1"><p>+ 1</p></div>
+                <div class="p-3">
+                  <p>
+                    Disartria ligeira a moderada.
+                  </p>
+                </div>
+              </div>
+            
+              <div
+                class="card level-2 score14"
+                data-category = "2"
+                data-value="2"
+                data-nameg="independente em CR"
+              >
+                <div class="p-1"><p>+ 2</p></div>
+                <div class="p-3">
+                  <p>Disartria grave.</p>
+                </div>
+              </div>
+      
+              <div
+              class="card level-2 score14"
+              data-category = "NT"
+              data-value="NT"
+              data-nameg="independente em CR"
+            >
+              <div class="p-1"><p>NT</p></div>
+              <div class="p-3">
+                <p>Não testável.</p>
+              </div>
+            </div>
+            
+      
+      
+      
+            
+            </div>  
+
+
+            <!-- -----  --- J --- SCORE 15 ---------------------------------------------------------------->
+
+            <div class="first-card">
+              <p>11. Inatenção / Extinção </p>  
+              
+            </div>
+            <div class="row-3">
+              <div
+                class="card level-15 score15" 
+                data-category = "mobilidade"
+                data-value="0"
+                data-nameg="independente"
+              >
+                <div class="p-1"><p>+ 0</p></div>
+                <div class="p-3">
+                  <p>
+                    Normal. 
+                  </p>
+                </div>
+              </div>
+            
+              <div
+                class="card level-5 score15"
+                data-category = "mobilidade"
+                data-value="1"
+                data-nameg="com ajuda"
+              >
+                <div class="p-1"><p>+ 1</p></div>
+                <div class="p-3">
+                  <p>
+                    Inatenção para estímulo simultâneo bilateral numa das modalidades.
+                  </p>
+                </div>
+              </div>
+            
+              <div
+                class="card level-2 score15"
+                data-category = "mobilidade"
+                data-value="2"
+                data-nameg="independente em CR"
+              >
+                <div class="p-1"><p>+ 2</p></div>
+                <div class="p-3">
+                  <p>Hemi-inatenção severa ou > 1 modalidade sensorial.
+                    <br>Não reconhece a própria mão.
+                  </p>
+                </div>
+              </div>
+      
+
+            
+      
+      
+      
+            
+            </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------- RESULTADOS ---------------------->
+    <div class="result-container">
+        <h4>RESULTADO</h4>
+        <p id="p" style="text-align: center; margin-top: 70px; color: rgb(194, 45, 45);">* Selecione <strong>todos</strong> os campos para obter o resultado.</p>
+        <div class="result-box">
+          <div class="result-1"></div>
+          <div id="copy-1" class="copy">Copiar</div>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+<footer style="width: 100vw; background-color: #EBF5FF; height: 100px; display: flex; justify-content: center; align-items: center;">
+  <p style="font-size: 12px; color: rgb(73, 73, 73);">A informação disponibilizada deverá ser aprovada por um médico.</p>
+</footer>
+    
+
+
+<script src="nihss.js"></script>
+</body>
+</html>
