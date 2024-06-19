@@ -13,8 +13,12 @@
   align-items: center;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.nav_original > h1 {
   text-align: center;
 }
+
 
 
 
